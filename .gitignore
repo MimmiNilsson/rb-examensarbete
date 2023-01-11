@@ -1,0 +1,15 @@
+# ignore node dependency directories
+node_modules/
+
+uploads/
+
+# ignore log files and databases
+*.log
+*.sql
+*.sqlite
+
+
+themes/rb-theme/mix-manifest.json
+themes/rb-theme/css/package-lock.json
+themes/rb-theme/css/app.css
+themes/rb-theme/package-lock.json
