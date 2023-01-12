@@ -1,7 +1,6 @@
 /* Typography */
 
 /*BASE PX SIZE: 16*/
-
 * {
   @apply antialiased;
 }
@@ -32,6 +31,26 @@ body {
 
 
 @layer base {
+
+  /*Nav and btn*/
+  .typo-link {
+    @apply uppercase;
+    font-family: 'Futura';
+    font-weight: 700; 
+    font-size: 0.875em; /*14px*/
+    line-height: 1.36em; /*19px*/
+  }
+
+
+  /*CTA btns*/
+  .typo-cta {
+    @apply uppercase;
+    font-family: 'Futura';
+    font-weight: 700; 
+    font-size: 1.3em; /*16px*/
+    line-height: 1.31em; /*21px*/
+  }
+  
   .typo-h1-larger {
     font-size: 3em;
     line-height: 1.2em;

@@ -4,6 +4,8 @@
 
 @import "fonts.css";
 @import "typo.css";
+@import "menu.css";
+@import "ui.css";
 
 * {
   -webkit-font-smoothing: antialiased;
@@ -17,6 +19,6 @@ body {
 
 @layer base {
   .wrapper {
-    @apply w-full px-6 mx-auto md:px-8 sm:max-w-5xl md:max-w-6xl lg:max-w-[1512px] ;
+    @apply w-full px-6 mx-auto md:px-8 sm:max-w-5xl md:max-w-6xl lg:max-w-[1512px];
   }
 }

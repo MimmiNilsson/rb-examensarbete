@@ -1,0 +1,10 @@
+@layer base {
+  .btn-white {
+    @apply px-[23px] py-[11px] duration-200 ease-in border-2 border-white hover:bg-white hover:text-black typo-link;
+  }
+
+  .btn-black {
+    @apply px-[25px] py-[12px] mt-11 duration-200 ease-in border-[3px] border-black hover:bg-black hover:text-white typo-cta;
+  }
+
+}

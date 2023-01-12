@@ -58,7 +58,8 @@ function amoba_setup()
 	// This theme uses wp_nav_menu() in one location.
 	register_nav_menus(
 		array(
-			'footer_menu' => __('Footer Menu', 'amoba')
+			'top_menu' => __('Top Menu', 'rb-examen'),
+			'footer_menu' => __('Footer Menu', 'rb-examen')
 		)
 	);
 

@@ -16,12 +16,9 @@ jQuery(document).ready(function ($) {});
 /*!*******************************!*\
   !*** ./resources/css/app.css ***!
   \*******************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+/***/ (() => {
 
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-// extracted by mini-css-extract-plugin
-
+throw new Error("Module build failed (from ./node_modules/laravel-mix/node_modules/mini-css-extract-plugin/dist/loader.js):\nModuleBuildError: Module build failed (from ./node_modules/postcss-loader/dist/cjs.js):\nSyntaxError\n\n(35:3) /Applications/MAMP/htdocs/rb-examen/wp-content/themes/rb-theme/resources/css/menu.css The `typo-submenu` class does not exist. If `typo-submenu` is a custom class, make sure it is defined within a `@layer` directive.\n\n \u001b[90m 33 | \u001b[39m\n \u001b[90m 34 | \u001b[39m\u001b[33m.menu-footer>ul.menu\u001b[39m > li \u001b[33m{\u001b[39m\n\u001b[1m\u001b[31m>\u001b[39m\u001b[22m\u001b[90m 35 | \u001b[39m  \u001b[36m@apply\u001b[39m mt-3 font-bold text-center typo-submenu text-\u001b[33m[\u001b[39m12px\u001b[33m]\u001b[39m\u001b[33m;\u001b[39m\n \u001b[90m    | \u001b[39m  \u001b[1m\u001b[31m^\u001b[39m\u001b[22m\n \u001b[90m 36 | \u001b[39m\u001b[33m}\u001b[39m\n \u001b[90m 37 | \u001b[39m\n\n    at processResult (/Applications/MAMP/htdocs/rb-examen/wp-content/themes/rb-theme/node_modules/webpack/lib/NormalModule.js:758:19)\n    at /Applications/MAMP/htdocs/rb-examen/wp-content/themes/rb-theme/node_modules/webpack/lib/NormalModule.js:860:5\n    at /Applications/MAMP/htdocs/rb-examen/wp-content/themes/rb-theme/node_modules/loader-runner/lib/LoaderRunner.js:400:11\n    at /Applications/MAMP/htdocs/rb-examen/wp-content/themes/rb-theme/node_modules/loader-runner/lib/LoaderRunner.js:252:18\n    at context.callback (/Applications/MAMP/htdocs/rb-examen/wp-content/themes/rb-theme/node_modules/loader-runner/lib/LoaderRunner.js:124:13)\n    at Object.loader (/Applications/MAMP/htdocs/rb-examen/wp-content/themes/rb-theme/node_modules/postcss-loader/dist/index.js:140:7)");
 
 /***/ }),
 
@@ -125,8 +122,7 @@ __webpack_require__.r(__webpack_exports__);
 /******/ 		// [resolve, reject, Promise] = chunk loading, 0 = chunk loaded
 /******/ 		var installedChunks = {
 /******/ 			"/js/app": 0,
-/******/ 			"editor-style": 0,
-/******/ 			"css/app": 0
+/******/ 			"editor-style": 0
 /******/ 		};
 /******/ 		
 /******/ 		// no chunk on demand loading
@@ -176,9 +172,9 @@ __webpack_require__.r(__webpack_exports__);
 /******/ 	// startup
 /******/ 	// Load entry module and return exports
 /******/ 	// This entry module depends on other loaded chunks and execution need to be delayed
-/******/ 	__webpack_require__.O(undefined, ["editor-style","css/app"], () => (__webpack_require__("./resources/js/app.js")))
-/******/ 	__webpack_require__.O(undefined, ["editor-style","css/app"], () => (__webpack_require__("./resources/css/app.css")))
-/******/ 	var __webpack_exports__ = __webpack_require__.O(undefined, ["editor-style","css/app"], () => (__webpack_require__("./resources/css/editor-style.css")))
+/******/ 	__webpack_require__.O(undefined, ["editor-style"], () => (__webpack_require__("./resources/js/app.js")))
+/******/ 	__webpack_require__.O(undefined, ["editor-style"], () => (__webpack_require__("./resources/css/app.css")))
+/******/ 	var __webpack_exports__ = __webpack_require__.O(undefined, ["editor-style"], () => (__webpack_require__("./resources/css/editor-style.css")))
 /******/ 	__webpack_exports__ = __webpack_require__.O(__webpack_exports__);
 /******/ 	
 /******/ })()

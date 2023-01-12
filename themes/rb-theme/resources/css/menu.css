@@ -1,0 +1,45 @@
+/* MAIN NAV */
+
+.header-menu > ul.menu {
+  @apply px-0 ml-1 mr-10 mt-11 lg:mt-0 lg:mr-0 lg:ml-0 lg:justify-between lg:items-center lg:flex lg:flex-row lg:px-10 xl:px-20 ;
+}
+
+.header-menu {
+  @apply lg:w-[calc(50%-35px)] 2xl:w-[40%] ;
+}
+
+.header-menu > ul.menu > li {
+  @apply my-2 text-left text-white lg:my-0 lg:text-center typo-h4 lg:typo-link ;
+}
+
+
+.header-menu-left {
+  @apply my-2 border-2 lg:my-0 border-red;
+}
+
+.header-menu-right ul > li:last-child > a,
+.header-menu-right ul > li:nth-child(2) > a {
+  @apply table lg:my-0 hover:bg-white hover:text-black btn-white my-[21px] text-[20px] lg:typo-link lg:text-[14px] border-2 border-red; 
+}
+
+.header-menu-right ul > li:nth-child(1) {
+  @apply mb-[20px] -mt-8 lg:mb-0 lg:-mt-0 typo-h4 lg:typo-link;
+}
+
+/* FOOTER NAV */
+.menu-footer>ul.menu {
+  @apply flex flex-col;
+}
+
+.menu-footer>ul.menu > li {
+  @apply mt-3 font-bold text-center typo-submenu text-[12px];
+}
+
+.menu-footer.right>ul > li:first-child {
+  @apply mb-7
+}
+
+.menu-footer.right>ul > li:last-child,
+.menu-footer.right>ul > li:nth-child(2) {
+  @apply py-2 border-white lg:py-3 lg:px-6 btn-white text-[12px];
+}
