@@ -50,23 +50,22 @@ module.exports = {
     },
     extend: {
       colors: {
-        black: "#0A0808",
-        red: "#812222",
-        white: "#F1F1F1",
-        beige: "#D1CCC4",
-        grey: "#BDBDBD",
-        darkGrey: "#4F4F4F",
-        darkerGrey: "#828282",
+        black: "#1D1A1A",
+        white: "#FDFDFD",
+        lime: "#F1FBB4",
+        purple: "#BEB4FB",
+        orange: "#FFBB6D",
+        blue: "#6DB1FF",
+        gray: "#F5F5F5",
       },
-      fontFamily: {},
+      fontFamily: {
+        sans: ['Poppins'],
+        serif: ['"Libre Baskerville"'],
+      },
       screens: { xs: "480px" },
       // backgroundImage: {
       //   close: "url('/wp-content/themes/amoba-theme/images/close.svg')",
       // },
-    },
-    fontFamily: {
-      // sans: ["Futura"],
-      // serif: ["Quiosco"],
     },
   },
   plugins: [
