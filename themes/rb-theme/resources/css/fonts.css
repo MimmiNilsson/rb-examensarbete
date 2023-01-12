@@ -1,0 +1,39 @@
+@font-face {
+  font-family: '"Josefin Sans"';
+  src: 
+    url("../fonts/JosefinSans-Thin.woff") format('woff'),
+    url("../fonts/JosefinSans-Thin.woff2") format('woff2');
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: '"Josefin Sans"';
+  src: 
+    url("../fonts/JosefinSans-Thin.woff") format('woff'),
+    url("../fonts/JosefinSans-Thin.woff2") format('woff2');
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: '"Libre Baskerville"';
+  src: 
+    url("../fonts/LibreBaskerville-Regular.woff") format('woff'),
+    url("../fonts/LibreBaskerville-Regular.woff2") format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: 
+    url("../fonts/Poppins-ExtraLight.woff") format('woff'),
+    url("../fonts/Poppins-ExtraLight.woff2") format('woff2');
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
