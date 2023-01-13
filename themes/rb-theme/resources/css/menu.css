@@ -1,10 +1,10 @@
 /* MAIN NAV */
 .header-menu > ul.menu {
-  @apply px-0 ml-1 mr-10 mt-11 lg:mt-0 lg:mr-0 lg:ml-0 lg:justify-evenly lg:items-center lg:flex lg:flex-row lg:bg-lime;
+  @apply  px-0 ml-1 mr-10 mt-11 lg:mt-0 lg:mr-0 lg:ml-0 lg:justify-evenly lg:items-center lg:flex lg:flex-row lg:bg-lime;
 }
 
 .header-menu {
-  @apply w-1/2 lg:w-[calc(50%-35px)] 2xl:w-[40%] border-2 border-orange text-black lg:text-white;
+  @apply w-1/2 lg:w-[40%] border-2 border-orange text-black lg:text-white;
 }
 
 .header-menu > ul.menu > li {
