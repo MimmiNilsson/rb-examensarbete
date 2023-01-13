@@ -1,23 +1,20 @@
 /* MAIN NAV */
-
-
-
 .header-menu > ul.menu {
-  @apply px-0 ml-1 mr-10 border-2 mt-11 lg:mt-0 lg:mr-0 lg:ml-0 lg:justify-between lg:items-center lg:flex lg:flex-row lg:px-10 xl:px-20 border-r-emerald-600;
+  @apply px-0 ml-1 mr-10 mt-11 lg:mt-0 lg:mr-0 lg:ml-0 lg:justify-evenly lg:items-center lg:flex lg:flex-row lg:bg-lime;
 }
 
 .header-menu {
-  @apply lg:w-[calc(50%-35px)] 2xl:w-[40%] border-2 border-yellow-500;
+  @apply w-1/2 lg:w-[calc(50%-35px)] 2xl:w-[40%] border-2 border-orange text-black lg:text-white;
 }
 
 .header-menu > ul.menu > li {
-  @apply my-2 text-left text-white lg:my-0 lg:text-center typo-h4 lg:typo-link ;
+  @apply my-2 text-left border-2 lg:text-black lg:my-0 lg:text-center typo-link border-blue ;
 }
 
 
-.header-menu-left {
+/* .header-menu-left {
   @apply my-2 border-2 border-blue-900 lg:my-0;
-}
+} */
 
 /* .header-menu-right ul > li:last-child > a,
 .header-menu-right ul > li:nth-child(2) > a {

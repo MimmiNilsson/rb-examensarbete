@@ -4,8 +4,10 @@
 
 @import "fonts.css";
 @import "typo.css";
-@import "menu.css";
 @import "ui.css";
+@import "menu.css";
+@import "menu-mobile.css";
+
 
 * {
   -webkit-font-smoothing: antialiased;
