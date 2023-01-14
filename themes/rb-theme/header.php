@@ -46,6 +46,9 @@ $site_url = network_site_url('/');
 	<div class="absolute cursor-pointer top-1.5 left-2">
 		<a href="<?php echo $site_url; ?>"><img class="w-[52px]" src=<?php echo $root_uri . '/resources/images/rb-logo-clear.svg'; ?> /></a>
 	</div>
+	<div class="absolute cursor-pointer top-1.5 left-20"> PLACEHOLDER
+		<!-- <a href="<?php echo $site_url; ?>"><img class="w-[52px]" src=<?php echo $root_uri . '/resources/images/rb-logo-clear.svg'; ?> /></a> -->
+	</div>
 </div>
 
 <div class="fixed top-0 left-0 z-40 w-full transition-transform bg-gray h-1/2 md:bg-transparent md:h-auto md:w-auto md:relative navbar-menu md:block">

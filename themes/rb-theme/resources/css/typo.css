@@ -34,8 +34,8 @@ body {
 
   /*Nav and btn*/
   .typo-link {
-    @apply uppercase;
-    font-family: 'Poppins';
+    @apply uppercase ;
+    font-family: '"Josefin Sans"';
     font-weight: 700; 
     font-size: 0.875em; /*14px*/
     line-height: 1.36em; /*19px*/
@@ -45,44 +45,20 @@ body {
   /*CTA btns*/
   .typo-cta {
     @apply uppercase;
-    font-family: 'Poppins';
+    font-family: '"Josefin Sans"';
     font-weight: 700; 
     font-size: 1.3em; /*16px*/
     line-height: 1.31em; /*21px*/
   }
-  
-  .typo-h1-larger {
-    font-size: 3em;
-    line-height: 1.2em;
-    @screen md {
-      font-size: 4em;
-    }      
-  }
 
-  .typo-h1 {
-    font-size: 2.8em;
-    line-height: 1.2em;  
-  }
-
-  .typo-h2 {
-    font-size: 2.1em;
-    line-height: 1.2em;
-  }  
-
-  .typo-h3 {
-    font-size: 1.5em;
-    line-height: 1.2em;
-  }   
-  
   .typo-h4 {
-    font-size: 1.25em;
-    line-height: 1.4em;
-  }     
-
-  .typo-body {
-    font-size: 1em;
-    line-height: 1.4em;
-  }     
+    @apply uppercase;
+    font-family: '"Josefin Sans"';
+    font-weight: 700; 
+    font-size: 2em; /*32px*/
+    line-height: 1.34em; /*43px*/
+  }
+  
 
 
 
