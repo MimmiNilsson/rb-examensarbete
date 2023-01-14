@@ -1,5 +1,64 @@
 /* MAIN NAV */
+
 .header-menu > ul.menu {
+  @apply px-0 ml-1 mr-10 mt-11 md:mt-0 md:mr-0 md:ml-0 md:justify-between md:items-center md:flex md:flex-row md:px-10 xl:px-20 ;
+}
+
+.header-menu {
+  @apply md:w-[calc(50%-35px)] 2xl:w-[40%];
+}
+
+.header-menu > ul.menu > li {
+  @apply my-2 text-left text-black md:my-0 md:text-center typo-h4 typo-link;
+}
+
+
+.header-menu-left {
+  @apply my-2 md:my-0;
+}
+
+.header-menu-right {
+  @apply border-2 border-red-400 ;
+}
+
+.header-menu-right ul {
+  @apply  top-0 border-2 border-green-500;
+}
+
+/* FOOTER NAV */
+
+
+
+/* .header-menu > ul.menu {
+  @apply px-0 ml-1 mr-10 border-2 border-red-700 mt-11 md:mt-0 md:mr-0 md:ml-0 md:justify-end md:flex md:flex-row ; 
+}
+
+.header-menu {
+  @apply w-[80%] border-2 border-black;
+}
+
+.header-menu > ul.menu > li {
+  @apply my-2 text-left border-2 border-yellow-200 md:text-black md:my-0 md:text-center typo-h4 md:typo-link md:mx-12;
+} */
+
+
+/* .header-menu {
+  @apply w-[80%] border-2 border-black lg:absolute lg:right-0 top-[calc(50%-36px)] lg:text-black;
+}
+
+.header-menu > ul.menu {
+  @apply lg:relative lg:justify-evenly lg:items-center lg:flex-row lg:border-2 lg:border-red-500 lg:flex ;
+}
+
+.header-menu > ul.menu > li {
+  @apply border-2 border-yellow-700 typo-link;
+} */
+
+
+
+
+
+/* .header-menu > ul.menu {
   @apply  px-0 ml-1 mr-10 mt-11 lg:mt-0 lg:mr-0 lg:ml-0 lg:justify-evenly lg:items-center lg:flex lg:flex-row lg:bg-lime;
 }
 
@@ -9,7 +68,12 @@
 
 .header-menu > ul.menu > li {
   @apply my-2 text-left border-2 lg:text-black lg:my-0 lg:text-center typo-link border-blue ;
-}
+} */
+
+
+
+
+
 
 
 /* .header-menu-left {
