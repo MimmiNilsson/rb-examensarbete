@@ -5,7 +5,7 @@
 }
 
 .header-menu {
-  @apply md:w-[calc(50%-35px)] 2xl:w-[40%] border-2 border-orange;
+  @apply md:w-[calc(50%-35px)] 2xl:w-[40%] border-2 border-orange ;
 }
 
 .header-menu > ul.menu > li {
