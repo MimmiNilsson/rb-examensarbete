@@ -1,11 +1,11 @@
 /* MAIN NAV */
 
 .header-menu > ul.menu {
-  @apply px-0 ml-1 mr-10 border-2 border-red-500 mt-11 md:mt-0 md:mr-0 md:ml-0 md:justify-between md:items-center md:flex md:flex-row md:px-10 xl:px-20;
+  @apply px-0 ml-1 mr-10 mt-11 md:mt-0 md:mr-0 md:ml-0 md:justify-between md:items-center md:flex md:flex-row md:px-10 xl:px-20;
 }
 
 .header-menu {
-  @apply md:w-[calc(50%-35px)] 2xl:w-[40%] border-2 border-yellow-300;
+  @apply md:w-[calc(50%-35px)] 2xl:w-[40%];
 }
 
 .header-menu > ul.menu > li {
@@ -17,7 +17,7 @@
   @apply my-2 md:my-0;
 }
 
-.header-menu-right {
+/* .header-menu-right {
   @apply border-2 border-blue ;
 }
 
@@ -27,7 +27,7 @@
 
 .header-menu-right > ul.menu > li {
   @apply border-2 border-black md:mx-2;
-}
+} */
 
 /* FOOTER NAV */
 
