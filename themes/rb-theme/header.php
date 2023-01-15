@@ -49,7 +49,7 @@ $site_url = network_site_url('/');
 				</div>
 
 				<div class="fixed top-0 left-0 z-40 w-full h-screen transition-transform bg-gray md:h-auto md:w-auto md:relative navbar-menu md:block"> <!-- md:bg-transparent -->
-					<div class="relative items-center justify-between p-12 mt-10 ml-2 border-2 navbar-backdrop md:-mt-0 md:ml-0 md:border-none md:flex md:p-0 border-blue">
+					<div class="relative items-center justify-between p-12 navbar-backdrop md:flex md:p-0">
 
 						<?php wp_nav_menu([
 							'theme_location' => 'menu_left',
@@ -67,7 +67,7 @@ $site_url = network_site_url('/');
 						]); ?>
 
 						<!-- Hamburger Nav --->
-						<!-- <div class="lg:hidden">
+						<!-- <div class="md:hidden">
 
 							<div class="mt-20">
 
