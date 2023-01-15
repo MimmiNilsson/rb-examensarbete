@@ -70,20 +70,6 @@ $site_url = network_site_url('/');
 						<!-- <div class="md:hidden">
 
 							<div class="mt-20">
-
-								<?php if (!empty($instagram_link)) : ?>
-									<a class="flex items-start mt-6" href="<?php the_field('instagram_link', 'option'); ?>" target="_blank">
-										<img src=<?php echo $root_uri . "/images/instagram-logo.svg" ?>>
-										<span class="mt-1 ml-2 typo-submenu text-[12px]">Instagram</span>
-									</a>
-								<?php endif; ?>
-								<?php if (!empty($facebook_link)) : ?>
-									<a class="flex items-start pr-6 mt-2" href="<?php the_field('facebook_link', 'option'); ?>" target="_blank">
-										<img src=<?php echo $root_uri . "/images/facebook-logo.svg" ?>>
-										<span class="mt-1 ml-2 typo-submenu text-[12px]">Facebook</span>
-									</a>
-								<?php endif; ?>
-							</div>
 							<div class="flex flex-row justify-between mt-12 lg:hidden typo-body text-[16px] md:text-[18px]">
 								<div class="w-[45%]">
 									<div class="flex">
@@ -94,9 +80,6 @@ $site_url = network_site_url('/');
 									<?php if (!empty($email)) : the_field('email', 'option');
 									endif; ?>
 								</div>
-								<div class="w-[45%]">
-									<?php if (!empty($adress)) : the_field('adress', 'option');
-									endif; ?>
 								</div>
 							</div>
 
