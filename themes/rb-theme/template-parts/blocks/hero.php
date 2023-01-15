@@ -14,11 +14,11 @@ $subheading = get_field('subheading');
 <div class="relative w-full h-[65vh] bg-black min-h-[600px]">
   <div class="absolute top-0 left-0 w-full h-full min-h-[490px]">
     <?php if (!empty($desktop_img)) : ?>
-      <div class="absolute <?php if (!empty($mobile_img)) : ?> hidden md:block <?php endif; ?> inset-0 z-0 w-full h-full bg-center bg-no-repeat bg-cover opacity-50" style="background-image: url('<?php echo wp_get_attachment_image_url($image_id, $image_size); ?>');"></div>
+      <div class="absolute <?php if (!empty($mobile_img)) : ?> hidden md:block <?php endif; ?> inset-0 z-0 w-full h-full bg-center bg-no-repeat bg-cover opacity-50" style="background-image: url('<?php echo wp_get_attachment_image_url($desktop_img_id, $img_size); ?>');"></div>
     <?php endif; ?>
 
     <?php if (!empty($mobile_img)) : ?>
-      <div class="absolute inset-0 z-0 w-full h-full bg-center bg-no-repeat bg-cover opacity-50 md:hidden" style="background-image: url('<?php echo wp_get_attachment_image_url($mobile_img_id, $image_size); ?>');"></div>
+      <div class="absolute inset-0 z-0 w-full h-full bg-center bg-no-repeat bg-cover opacity-50 md:hidden" style="background-image: url('<?php echo wp_get_attachment_image_url($mobile_img_id, $img_size); ?>');"></div>
     <?php endif; ?>
 
     <div class="relative z-20 mt-[130px] h-[calc(100%-130px-55px)] flex align-middle items-center w-full">
