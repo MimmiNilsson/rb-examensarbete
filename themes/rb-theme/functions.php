@@ -140,7 +140,7 @@ function amoba_nav_menu_add_submenu_class($classes, $args, $depth)
 add_filter('nav_menu_submenu_css_class', 'amoba_nav_menu_add_submenu_class', 10, 3);
 
 
-//CREATE ACF BLOCK TYPES
+// CREATE ACF BLOCK TYPES
 add_action('acf/init', 'acf_init_block_types');
 function acf_init_block_types()
 {
@@ -148,14 +148,14 @@ function acf_init_block_types()
 	// Check function exists.
 	if (function_exists('acf_register_block_type')) {
 
-
+		// Hero Block
 		acf_register_block_type(array(
-			'name'              => 'amoba-text',
-			'title'             => __('amoba | Text'),
-			'render_template'   => 'template-parts/blocks/text.php',
+			'name'              => 'hero',
+			'title'             => __('RB | Hero'),
+			'render_template'   => 'template-parts/blocks/hero.php',
 			'category'          => 'custom',
-			'icon'              => 'admin-comments',
-			'keywords'          => array('content'),
+			'icon'              => 'cover-image',
+			'keywords'          => array('hero'),
 			'mode' => 'edit',
 			'supports' => array(
 				'mode' => false
