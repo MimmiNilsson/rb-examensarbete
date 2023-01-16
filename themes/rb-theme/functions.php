@@ -178,6 +178,31 @@ function acf_init_block_types()
 	}
 }
 
+// OPTIONS PAGES
+if (function_exists('acf_add_options_page')) {
+
+	// Selected Cases
+	acf_add_options_page(array(
+		'page_title'    => 'Customize Selected Cases',
+		'menu_title'    => 'Customize Cases',
+		'menu_slug'   => 'selected-cases',
+	));
+
+	// Footer
+	acf_add_options_page(array(
+		'page_title'    => 'Customize Footer Menu',
+		'menu_title'    => 'Customize Footer',
+		'menu_slug'   => 'footer-options',
+	));
+
+	// Page 404
+	acf_add_options_page(array(
+		'page_title'    => 'Customize Page Not Found (404)',
+		'menu_title'    => 'Customize 404',
+		'menu_slug'   => 'customize-404',
+	));
+}
+
 
 // Make sure Polylang copies the content when creating a translation
 function jb_editor_content($content)
