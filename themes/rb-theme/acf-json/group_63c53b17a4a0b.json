@@ -1,9 +1,9 @@
 {
-    "key": "group_63c429b6f0422",
+    "key": "group_63c53b17a4a0b",
     "title": "Hero Block",
     "fields": [
         {
-            "key": "field_63c429be914c7",
+            "key": "field_63c53b17a8f81",
             "label": "Hero",
             "name": "",
             "type": "accordion",
@@ -20,7 +20,7 @@
             "endpoint": 0
         },
         {
-            "key": "field_63c429d8914c8",
+            "key": "field_63c53b17a8f86",
             "label": "Desktop Image",
             "name": "desktop_img",
             "type": "image",
@@ -44,7 +44,7 @@
             "mime_types": ""
         },
         {
-            "key": "field_63c43460a721d",
+            "key": "field_63c53b17a8f8a",
             "label": "Mobile Image",
             "name": "mobile_img",
             "type": "image",
@@ -68,7 +68,7 @@
             "mime_types": ""
         },
         {
-            "key": "field_63c42a4a914c9",
+            "key": "field_63c53b17a8f8e",
             "label": "Heading",
             "name": "heading",
             "type": "text",
@@ -87,7 +87,7 @@
             "maxlength": ""
         },
         {
-            "key": "field_63c42a52914ca",
+            "key": "field_63c53b17a8f92",
             "label": "Subheading",
             "name": "subheading",
             "type": "text",
@@ -106,7 +106,7 @@
             "maxlength": ""
         },
         {
-            "key": "field_63c42a5b914cb",
+            "key": "field_63c53b17a8f96",
             "label": "Include Button",
             "name": "show_btn",
             "type": "true_false",
@@ -125,7 +125,7 @@
             "ui_off_text": ""
         },
         {
-            "key": "field_63c42a6f84f50",
+            "key": "field_63c53b17a8f9a",
             "label": "Call To Action",
             "name": "cta",
             "type": "link",
@@ -134,7 +134,7 @@
             "conditional_logic": [
                 [
                     {
-                        "field": "field_63c42a5b914cb",
+                        "field": "field_63c53b17a8f96",
                         "operator": "==",
                         "value": "1"
                     }
@@ -165,5 +165,5 @@
     "hide_on_screen": "",
     "active": true,
     "description": "",
-    "modified": 1673802889
+    "modified": 1673871402
 }

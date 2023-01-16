@@ -29,8 +29,8 @@ $site_url = network_site_url('/');
 		<header id="menu" class="absolute top-0 left-0 z-50 w-full">
 
 			<!-- Main Navigation -->
-			<nav id="navbar" class="fixed w-full md:py-7 md:bg-gray md:h-auto menu-bg"> <!-- md:bg-transparent -->
-				<div class="relative z-50 w-full border-b-2 border-white md:hidden h-[62px] bg-gray">
+			<nav id="navbar" class="fixed w-full text-white md:py-7 md:bg-transparent md:h-auto menu-bg"> <!-- md:bg-transparent -->
+				<div class="relative z-50 w-full border-b-2 border-white md:hidden h-[62px] bg-transparent">
 					<button class="absolute w-12 h-12 text-white top-2.5 right-3 md:right-0 md:top-0 navbar-burger">
 						<span aria-hidden="true" class="absolute block w-12 h-1 transition duration-500 ease-in-out transform bg-orange"></span>
 						<span aria-hidden="true" class="absolute block w-12 h-1 transition duration-300 ease-in-out transform bg-orange"></span>
@@ -48,7 +48,7 @@ $site_url = network_site_url('/');
 					</div>
 				</div>
 
-				<div class="fixed top-0 left-0 z-40 w-full h-screen transition-transform bg-gray md:h-auto md:w-auto md:relative navbar-menu md:block"> <!-- md:bg-transparent -->
+				<div class="fixed top-0 left-0 z-40 w-full h-screen transition-transform bg-black md:bg-transparent md:h-auto md:w-auto md:relative navbar-menu md:block"> <!-- bg-transparent/gray -->
 					<div class="relative items-center justify-between p-12 navbar-backdrop md:flex md:p-0">
 
 						<?php wp_nav_menu([

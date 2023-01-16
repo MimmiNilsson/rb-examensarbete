@@ -11,7 +11,7 @@ window.onload = function () {
       navbar.style.top = "0";
       scrollUp();
     } else if (!opened) {
-      navbar.style.top = "-150px";
+      navbar.style.top = "-135px";
     }
 
     prevScrollPos = currentScrollPos;
@@ -19,16 +19,15 @@ window.onload = function () {
 
   function scrollUp() {
     if (window.pageYOffset > scrollTop) {
-      navbar.style.backgroundColor = "gray";
+      navbar.style.backgroundColor = "#1D1A1A";
     } else {
       navbar.style.backgroundColor = "transparent";
     }
   }
 
-  
 
   function scroll() {
-    showOnScroll();
+    // showOnScroll();
     menuAnimation();
   }
 
