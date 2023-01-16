@@ -161,6 +161,20 @@ function acf_init_block_types()
 				'mode' => false
 			)
 		));
+
+		// Text Block (wysiwyg)
+		acf_register_block_type(array(
+			'name'              => 'text-block',
+			'title'             => __('RB | Text'),
+			'render_template'   => 'template-parts/blocks/text-wysiwyg.php',
+			'category'          => 'custom',
+			'icon'              => 'edit',
+			'keywords'          => array('text'),
+			'mode' => 'edit',
+			'supports' => array(
+				'mode' => false
+			)
+		));
 	}
 }
 
