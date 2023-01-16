@@ -29,10 +29,9 @@ body {
   }
 }
 
-
 @layer base {
-
-  /*Nav and btn*/
+  
+  /*Nav*/
   .typo-link {
     @apply uppercase ;
     font-family: '"Josefin Sans"';
@@ -41,12 +40,11 @@ body {
     line-height: 1.36em; /*19px*/
   }
 
-
-  /*CTA btns*/
+  /*CTA btn*/
   .typo-cta {
     @apply uppercase;
-    font-family: '"Josefin Sans"';
-    font-weight: 700; 
+    font-family: 'Poppins';
+    font-weight: 900; 
     font-size: 1.3em; /*16px*/
     line-height: 1.31em; /*21px*/
   }
