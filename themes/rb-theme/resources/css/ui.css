@@ -4,7 +4,7 @@
   }
 
   .btn-black {
-    @apply px-[25px] py-[12px] mt-11 duration-200 ease-in border-2 border-black hover:bg-black hover:text-white typo-cta;
+    @apply px-[50px] py-[12px] mt-8 duration-200 ease-in border-2 border-black hover:bg-black hover:text-white typo-cta;
   }
 
 

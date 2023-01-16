@@ -98,7 +98,7 @@
         {
             "key": "field_63c57bd18ee60",
             "label": "Call To Action",
-            "name": "cta",
+            "name": "link",
             "type": "link",
             "instructions": "",
             "required": 1,
@@ -136,5 +136,5 @@
     "hide_on_screen": "",
     "active": true,
     "description": "",
-    "modified": 1673887315
+    "modified": 1673888541
 }

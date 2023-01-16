@@ -83,10 +83,17 @@ body {
   
    /*preamble*/
    .typo-subheading {
-    font-family: '"Libre Baskerville"';
+    font-family: 'Poppins';
     font-weight: 400; 
     font-size: 1.5625em; /*25px*/
     line-height: 1.4em; /*35px*/
+  }
+
+  .typo-body {
+    font-family: '"Libre Baskerville"';
+    font-weight: 400; 
+    font-size: 1.125em; /*18px*/
+    line-height: 1.5em; /*27px*/
   }
 
 

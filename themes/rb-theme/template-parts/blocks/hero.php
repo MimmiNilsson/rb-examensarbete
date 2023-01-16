@@ -28,8 +28,11 @@ $subheading = get_field('subheading');
       </div>
 
       <div class="md:w-[50%] flex justify-center items-center flex-col md:translate-x-1/2 w-full text-white">
-        <h1 class="m-2 text-center typo-h1"><?php echo esc_html($heading); ?></h1>
-        <h3 class="m-2 text-center typo-subheading"><?php echo esc_html($subheading); ?></h3>
+        <div class="mx-6 text-center md:mx-0">
+          <h1 class="typo-h1"><?php echo esc_html($heading); ?></h1>
+          <h3 class="typo-subheading"><?php echo esc_html($subheading); ?></h3>
+        </div>
+
         <?php
         $btn = get_field('cta');
         if ($btn) :
