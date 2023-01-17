@@ -80,6 +80,14 @@ body {
     font-size: 1.728em; /*27.65px*/               /*2em;*/ /*32px*/  
     line-height: 1.34em; /*43px*/
   }
+
+  .typo-h5 {
+    @apply uppercase;
+    font-family: '"Libre Baskerville"';
+    font-weight: 500;
+    font-size: /*1.440em;*/ /*23.04px*/     /*1.250em;*/ /*20px*/      1.125em; /*18px*/
+    line-height: 1.21em; /*46px*/
+  }
   
    /*preamble*/
    .typo-subheading {
@@ -88,6 +96,8 @@ body {
     font-size: 1.5625em; /*25px*/
     line-height: 1.4em; /*35px*/
   }
+
+  
 
   .typo-body {
     font-family: '"Libre Baskerville"';

@@ -175,18 +175,32 @@ function acf_init_block_types()
 				'mode' => false
 			)
 		));
+
+		// Selected Cases Block
+		acf_register_block_type(array(
+			'name'              => 'cases',
+			'title'             => __('RB | Cases'),
+			'render_template'   => 'template-parts/blocks/selected-cases.php',
+			'category'          => 'custom',
+			'icon'              => 'sticky',
+			'keywords'          => array('cases', 'selected', 'featured'),
+			'mode' => 'edit',
+			'supports' => array(
+				'mode' => false
+			)
+		));
 	}
 }
 
 // OPTIONS PAGES
 if (function_exists('acf_add_options_page')) {
 
-	// Selected Cases
-	acf_add_options_page(array(
-		'page_title'    => 'Customize Selected Cases',
-		'menu_title'    => 'Customize Cases',
-		'menu_slug'   => 'selected-cases',
-	));
+	// // Selected Cases
+	// acf_add_options_page(array(
+	// 	'page_title'    => 'Customize Selected Cases',
+	// 	'menu_title'    => 'Customize Cases',
+	// 	'menu_slug'   => 'selected-cases',
+	// ));
 
 	// Footer
 	acf_add_options_page(array(

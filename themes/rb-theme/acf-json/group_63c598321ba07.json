@@ -3,6 +3,23 @@
     "title": "Selected Cases",
     "fields": [
         {
+            "key": "field_63c67e80f050e",
+            "label": "Selected Cases",
+            "name": "",
+            "type": "accordion",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "open": 0,
+            "multi_expand": 0,
+            "endpoint": 0
+        },
+        {
             "key": "field_63c5983d9a9f6",
             "label": "Heading",
             "name": "heading",
@@ -85,7 +102,7 @@
         },
         {
             "key": "field_63c59d6951a6b",
-            "label": "Call To Action 1",
+            "label": "Call To Action",
             "name": "cta_1",
             "type": "link",
             "instructions": "",
@@ -162,7 +179,7 @@
         },
         {
             "key": "field_63c59d7a51a6c",
-            "label": "Call To Action 2",
+            "label": "Call To Action",
             "name": "cta_2",
             "type": "link",
             "instructions": "",
@@ -239,7 +256,7 @@
         },
         {
             "key": "field_63c59da51d11b",
-            "label": "Call To Action 3",
+            "label": "Call To Action",
             "name": "cta_3",
             "type": "link",
             "instructions": "",
@@ -256,9 +273,9 @@
     "location": [
         [
             {
-                "param": "options_page",
+                "param": "block",
                 "operator": "==",
-                "value": "selected-cases"
+                "value": "acf\/cases"
             }
         ]
     ],
@@ -270,5 +287,5 @@
     "hide_on_screen": "",
     "active": true,
     "description": "",
-    "modified": 1673895354
+    "modified": 1673963784
 }

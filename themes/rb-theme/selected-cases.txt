@@ -21,12 +21,11 @@ $link_title = $link['title'];
 $link_target = $link['target'] ? $link['target'] : '_self';
 ?>
 
-<div class="flex items-center mt-9 md:mt-24">
-  <div aria-hidden="true" class="w-full h-[1px] bg-black"></div>
-  <h4 class="typo-large italic text-center px-3 md:px-12 md:min-w-[260px] md:px-10 lg:min-w-[350px]"><?php echo the_field('heading'); ?></h4>
-  <div aria-hidden="true" class="w-full h-[1px] bg-black"></div>
-</div>
 
 <!-- NOT AN OPTIONS PAGE! NEEDS TO BE REG ACF? -->
+
+<div class="border-2 border-purple h-[200px] w-full">
+  <?php var_dump($heading); ?>
+</div> 
 
 

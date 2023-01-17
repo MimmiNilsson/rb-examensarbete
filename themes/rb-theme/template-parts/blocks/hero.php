@@ -9,8 +9,8 @@ $heading = get_field('heading');
 $subheading = get_field('subheading');
 ?>
 
-<div class="relative w-full h-[65vh] md:h-[85vh] bg-black">
-  <div class="absolute top-0 left-0 w-full h-full min-h-[490px]">
+<div class="relative w-full h-[65vh] sm:h-[55vh] md:h-[70vh] bg-black">
+  <div class="absolute top-0 left-0 w-full h-full min-h-[360px]">
     <?php if (!empty($desktop_img)) : ?>
       <div class="absolute <?php if (!empty($mobile_img)) : ?> hidden md:block <?php endif; ?> inset-0 z-0 w-full h-full bg-center bg-no-repeat bg-cover opacity-50" style="background-image: url('<?php echo wp_get_attachment_image_url($desktop_img_id, $img_size); ?>');"></div>
     <?php endif; ?>
