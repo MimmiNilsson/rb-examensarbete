@@ -85,7 +85,15 @@ body {
     @apply uppercase;
     font-family: '"Libre Baskerville"';
     font-weight: 500;
-    font-size: /*1.440em;*/ /*23.04px*/     /*1.250em;*/ /*20px*/      1.125em; /*18px*/
+    font-size: /*1.440em;*/ /*23.04px*/     /*1.250em;*/ /*20px*/      1.440em; /*23.04px*/
+    line-height: 1.21em; /*46px*/
+  }
+
+  .typo-h6 {
+    @apply uppercase;
+    font-family: '"Libre Baskerville"';
+    font-weight: 500;
+    font-size: 1.125em; /*18px*/
     line-height: 1.21em; /*46px*/
   }
   
@@ -97,7 +105,14 @@ body {
     line-height: 1.4em; /*35px*/
   }
 
-  
+  /*selected (cases)*/
+  .typo-subheading-small {
+    @apply uppercase;
+    font-family: 'Poppins';
+    font-weight: 500;
+    font-size: 0.750em; /*12px*/
+    line-height: 1.34em; /*16px*/
+  }
 
   .typo-body {
     font-family: '"Libre Baskerville"';
@@ -105,9 +120,5 @@ body {
     font-size: 1.125em; /*18px*/  /*19.20px*/
     line-height: 1.5em; /*27px*/
   }
-
-
-
-
 
 }
