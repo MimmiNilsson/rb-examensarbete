@@ -1,4 +1,14 @@
 <?php
+// add_theme_support('title-tag');
+// add_theme_support('post-thumbnails');
+// add_theme_support('custom-logo');
+
+// Add WooCommerce support
+add_action('after_setup_theme', 'setup_woocommerce_support');
+function setup_woocommerce_support()
+{
+	add_theme_support('woocommerce');
+}
 
 /**
  * Enqueue scripts.
