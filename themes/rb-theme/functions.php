@@ -272,6 +272,29 @@ add_filter('document_title_parts', function ($title) {
 	return $title;
 });
 
+// WOOCOMMERCE RELATED
+
+// Remove "Select options" button from (variable) products on the main WooCommerce shop page.
+add_filter( 'woocommerce_loop_add_to_cart_link', function( $product ) {
+	global $product;
+	if ( is_shop() && 'variable' === $product->product_type ) {
+		return '';
+	} else {
+		sprintf( '<a href="%s" data-quantity="%s" class="%s" %s>%s</a>',
+			esc_url( $product->add_to_cart_url() ),
+			esc_attr( isset( $args['quantity'] ) ? $args['quantity'] : 1 ),
+			esc_attr( isset( $args['class'] ) ? $args['class'] : 'button' ),
+			isset( $args['attributes'] ) ? wc_implode_html_attributes( $args['attributes'] ) : '',
+			esc_html( $product->add_to_cart_text() )
+		);
+	}
+} );
+
+// add_action('woocommerce_before_single_product', 'add_breadcrumb', 20);
+// function add_breadcrumb(){
+//    woocommerce_breadcrumb();
+// };
+
 @ini_set('upload_max_size', '64M');
 @ini_set('post_max_size', '64M');
 @ini_set('max_execution_time', '300');
