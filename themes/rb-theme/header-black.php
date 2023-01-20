@@ -33,7 +33,7 @@ $site_url = network_site_url('/');
 		<header id="menu" class="absolute top-0 left-0 z-50 w-full">
 
 			<!-- Main Navigation -->
-			<nav id="navbar" class="fixed w-full text-white md:py-7 md:bg-transparent md:h-auto menu-bg">
+			<nav id="navbar" class="fixed w-full text-white md:py-7 md:bg-black md:h-auto menu-bg">
 				<div class="relative z-50 w-full border-b-[1px] border-white md:hidden h-[62px] bg-transparent">
 					<button class="absolute w-12 h-12 text-white top-2.5 right-3 md:right-0 md:top-0 navbar-burger">
 						<span aria-hidden="true" class="absolute block w-12 h-1 transition duration-500 ease-in-out transform bg-orange"></span>
@@ -61,15 +61,15 @@ $site_url = network_site_url('/');
 						]); ?>
 
 						<!-- MY ACCOUNT/LOGGED IN LOGO HAMBURGER -->
-						<div class="absolute cursor-pointer md:hidden typo-h4">
+						<div class="absolute cursor-pointer top-[230px] left-10 md:hidden">
 							<?php if (is_user_logged_in()) : ?>
-								<a class="top-[230px] left-10" href="<?php echo site_url('/my-account/'); ?>">
+								<a href="<?php echo site_url('/my-account/'); ?>">
 									<svg xmlns="http://www.w3.org/2000/svg" height="48" width="48" fill="white">
 										<path d="M24 22.75q-2.5 0-4.125-1.65t-1.625-4.15q0-2.5 1.625-4.125T24 11.2q2.5 0 4.125 1.625t1.625 4.125q0 2.5-1.625 4.15Q26.5 22.75 24 22.75Zm-14 14.5v-2.9q0-1.35.75-2.375t2-1.625q2.95-1.3 5.75-1.975T24 27.7q2.7 0 5.5.675t5.7 1.975q1.3.6 2.05 1.625Q38 33 38 34.35v2.9Zm1.55-1.55h24.9v-1.35q0-.75-.5-1.475-.5-.725-1.4-1.175-2.7-1.3-5.275-1.875T24 29.25q-2.7 0-5.3.575-2.6.575-5.25 1.875-.9.45-1.4 1.175-.5.725-.5 1.475ZM24 21.2q1.8 0 3.025-1.2 1.225-1.2 1.225-3t-1.225-3.025Q25.8 12.75 24 12.75q-1.8 0-3.025 1.225Q19.75 15.2 19.75 17q0 1.8 1.225 3T24 21.2Zm0-4.2Zm0 18.7Z" />
 									</svg>
 								</a>
 							<?php else : ?>
-								<a class="mt-4 top-[250px] left-10 border-2 border-orange" href="<?php echo site_url('/my-account/'); ?>">Login</a>
+								<a href="<?php echo site_url('/my-account/'); ?>">Login</a>
 							<?php endif; ?>
 						</div>
 						<!-- CART LOGO HAMBURGER -->
@@ -92,39 +92,26 @@ $site_url = network_site_url('/');
 							'container_class' => 'header-menu-right header-menu'
 						]); ?>
 
-						<!-- DIV SIZING FOR LOGIN, NOT ICON! -->
-						<div class="absolute flex flex-row w-[calc(25%-30px)] 2xl:w-[17%] top-3.5 right-12 lg:right-22 xl:right-[85px] 2xl:right-24 justify-between border-2 border-white">
-							<?php if (is_user_logged_in()) : ?>
-								<div class="hidden border-2 md:relative md:block -top-1 border-blue">
+						<div class="absolute flex flex-row md:w-[calc(25%-35px)] 2xl:w-[20%] top-3.5 right-24 justify-between ">
+							<div class="hidden px-8 md:relative md:block -top-1">
+								<?php if (is_user_logged_in()) : ?>
 									<a href="<?php echo site_url('/my-account/'); ?>">
 										<svg class="h-[48px] w-[46px] lg:h-[48px] lg:w-[48px]" fill="white" xmlns="http://www.w3.org/2000/svg">
 											<path d="M24 22.75q-2.5 0-4.125-1.65t-1.625-4.15q0-2.5 1.625-4.125T24 11.2q2.5 0 4.125 1.625t1.625 4.125q0 2.5-1.625 4.15Q26.5 22.75 24 22.75Zm-14 14.5v-2.9q0-1.35.75-2.375t2-1.625q2.95-1.3 5.75-1.975T24 27.7q2.7 0 5.5.675t5.7 1.975q1.3.6 2.05 1.625Q38 33 38 34.35v2.9Zm1.55-1.55h24.9v-1.35q0-.75-.5-1.475-.5-.725-1.4-1.175-2.7-1.3-5.275-1.875T24 29.25q-2.7 0-5.3.575-2.6.575-5.25 1.875-.9.45-1.4 1.175-.5.725-.5 1.475ZM24 21.2q1.8 0 3.025-1.2 1.225-1.2 1.225-3t-1.225-3.025Q25.8 12.75 24 12.75q-1.8 0-3.025 1.225Q19.75 15.2 19.75 17q0 1.8 1.225 3T24 21.2Zm0-4.2Zm0 18.7Z" />
 										</svg>
 									</a>
-								</div>
-							<?php else : ?>
-								<div class="flex hidden md:relative md:block lg:top-2.5 top-4">
-									<a class="self-center typo-link" href="<?php echo site_url('/my-account/'); ?>">Login</a>
-								<?php endif; ?>
-								</div>
-
-								<?php if (is_user_logged_in()) : ?>
-									<div class="hidden md:relative md:block top-0.5 right-24">
-										<a href="<?php echo site_url('/cart/'); ?>">
-											<svg class="h-[32px] w-[46px] lg:h-[35px] lg:w-[48px]" viewBox="0 0 28 37" fill="white" xmlns="http://www.w3.org/2000/svg">
-												<path d="M5.67725 37.3055H22.3228C25.3562 37.3055 27.8428 34.9651 27.8428 32.0499V8.892C27.8428 8.4814 27.4753 8.15292 27.0481 8.15292H21.605V6.60907C21.605 2.78227 18.2981 -0.330078 14.2136 -0.330078C10.1292 -0.330078 6.82227 2.78227 6.82227 6.60907V8.15292H0.951905C0.524658 8.15292 0.157227 8.4814 0.157227 8.892V32.0499C0.157227 34.9651 2.65234 37.3055 5.67725 37.3055ZM8.36035 6.60907C8.36035 3.59526 10.9836 1.14808 14.2136 1.14808C17.4436 1.14808 20.0669 3.59526 20.0669 6.60907V8.15292H8.36035V6.60907ZM1.69531 9.63108H6.82227V16.948C6.82227 17.3586 7.16406 17.6871 7.59131 17.6871C8.01855 17.6871 8.36035 17.3586 8.36035 16.948V9.63108H20.0669V16.948C20.0669 17.3586 20.4087 17.6871 20.8359 17.6871C21.2632 17.6871 21.605 17.3586 21.605 16.948V9.63108H26.3047V32.0499C26.3047 34.1439 24.5017 35.8274 22.3228 35.8274H5.67725C3.49829 35.8274 1.69531 34.1521 1.69531 32.0499V9.63108Z" fill="#FDFDFD" />
-											</svg>
-										</a>
-									</div>
 								<?php else : ?>
-									<div class="hidden md:relative md:block top-0.5 -right-2">
-										<a href="<?php echo site_url('/cart/'); ?>">
-											<svg class="h-[32px] w-[46px] lg:h-[35px] lg:w-[48px]" viewBox="0 0 28 37" fill="white" xmlns="http://www.w3.org/2000/svg">
-												<path d="M5.67725 37.3055H22.3228C25.3562 37.3055 27.8428 34.9651 27.8428 32.0499V8.892C27.8428 8.4814 27.4753 8.15292 27.0481 8.15292H21.605V6.60907C21.605 2.78227 18.2981 -0.330078 14.2136 -0.330078C10.1292 -0.330078 6.82227 2.78227 6.82227 6.60907V8.15292H0.951905C0.524658 8.15292 0.157227 8.4814 0.157227 8.892V32.0499C0.157227 34.9651 2.65234 37.3055 5.67725 37.3055ZM8.36035 6.60907C8.36035 3.59526 10.9836 1.14808 14.2136 1.14808C17.4436 1.14808 20.0669 3.59526 20.0669 6.60907V8.15292H8.36035V6.60907ZM1.69531 9.63108H6.82227V16.948C6.82227 17.3586 7.16406 17.6871 7.59131 17.6871C8.01855 17.6871 8.36035 17.3586 8.36035 16.948V9.63108H20.0669V16.948C20.0669 17.3586 20.4087 17.6871 20.8359 17.6871C21.2632 17.6871 21.605 17.3586 21.605 16.948V9.63108H26.3047V32.0499C26.3047 34.1439 24.5017 35.8274 22.3228 35.8274H5.67725C3.49829 35.8274 1.69531 34.1521 1.69531 32.0499V9.63108Z" fill="#FDFDFD" />
-											</svg>
-										</a>
-									<?php endif; ?>
-									</div>
+									<a href="<?php echo site_url('/my-account/'); ?>">Login</a>
+								<?php endif; ?>
+							</div>
+
+							<div class="hidden md:relative md:block top-0.5">
+								<a href="<?php echo site_url('/cart/'); ?>">
+									<svg class="h-[32px] w-[46px] lg:h-[35px] lg:w-[48px]" viewBox="0 0 28 37" fill="white" xmlns="http://www.w3.org/2000/svg">
+										<path d="M5.67725 37.3055H22.3228C25.3562 37.3055 27.8428 34.9651 27.8428 32.0499V8.892C27.8428 8.4814 27.4753 8.15292 27.0481 8.15292H21.605V6.60907C21.605 2.78227 18.2981 -0.330078 14.2136 -0.330078C10.1292 -0.330078 6.82227 2.78227 6.82227 6.60907V8.15292H0.951905C0.524658 8.15292 0.157227 8.4814 0.157227 8.892V32.0499C0.157227 34.9651 2.65234 37.3055 5.67725 37.3055ZM8.36035 6.60907C8.36035 3.59526 10.9836 1.14808 14.2136 1.14808C17.4436 1.14808 20.0669 3.59526 20.0669 6.60907V8.15292H8.36035V6.60907ZM1.69531 9.63108H6.82227V16.948C6.82227 17.3586 7.16406 17.6871 7.59131 17.6871C8.01855 17.6871 8.36035 17.3586 8.36035 16.948V9.63108H20.0669V16.948C20.0669 17.3586 20.4087 17.6871 20.8359 17.6871C21.2632 17.6871 21.605 17.3586 21.605 16.948V9.63108H26.3047V32.0499C26.3047 34.1439 24.5017 35.8274 22.3228 35.8274H5.67725C3.49829 35.8274 1.69531 34.1521 1.69531 32.0499V9.63108Z" fill="#FDFDFD" />
+									</svg>
+								</a>
+							</div>
 
 
 						</div>
