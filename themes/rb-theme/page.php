@@ -1,31 +1,11 @@
-<?php get_header(); ?>
+<?php if (is_page('cart') || is_page('my-account') || is_page('checkout') || is_page('shop')) : ?>
+	<?php get_header('black'); ?>
+<?php else : ?>
+	<?php get_header(); ?>
+<?php endif; ?>
 
-<div class="">
-    <?php // the_title(); 
-    ?>
-    <?php the_content(); ?>
-</div>
-
-
-
-<!-- <div class="">
-    <?php // if (have_posts()) : 
-    ?>
-        <?php
-        // while (have_posts()) :
-        //     the_post();
-        ?>
-
-            <?php // get_template_part('template-parts/content', get_post_format()); 
-            ?>
-
-        <?php // endwhile; 
-        ?>
-
-    <?php // endif; 
-    ?>
-
-</div> -->
+<?php the_content(); ?>
+<?php var_dump(is_page('shop')); ?>
 
 <?php
 get_footer();
