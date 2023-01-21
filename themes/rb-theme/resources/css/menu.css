@@ -18,5 +18,5 @@
 }
 
 .header-menu-right {
-  @apply absolute left-12 md:left-0 top-[157px] md:static;
+  @apply absolute left-12 md:left-0 top-[147px] md:static;
 }
