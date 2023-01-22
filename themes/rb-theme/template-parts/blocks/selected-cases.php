@@ -39,18 +39,18 @@ $image_size = 'large';
 
 <!-- FEATURED CASES -->
 <div class="m-auto lg:w-[90%] xl:w-[1220px] relative mt-4 mb-9 md:mb-24">
-  <div class="grid h-full gap-4 mx-6 md:grid-cols-3 lg:mx-0">
+  <div class="grid h-full gap-4 mx-6 text-center md:grid-cols-3 lg:mx-0">
 
     <!-- CASE 1 -->
-    <div class="relative h-full p-6 md:p-2 bg-gray box-shadow">
-      <img class="rounded-[5px]" src="<?php echo wp_get_attachment_image_url($image_1_id, $image_size); ?>" />
+    <div class="relative p-6 md:p-2 bg-gray box-shadow">
+      <img class="rounded-[5px] w-full h-[220px] object-cover object-center" src="<?php echo wp_get_attachment_image_url($image_1_id, $image_size); ?>" />
 
       <?php if (!empty($title_1)) : ?>
         <p class="my-2 italic"><?php echo $title_1; ?></p>
       <?php endif; ?>
 
       <?php if (!empty($customer_1)) : ?>
-        <p class="mb-4 typo-subheading-small"><?php echo $customer_1; ?></p>
+        <p class="mb-6 typo-subheading-small"><?php echo $customer_1; ?></p>
       <?php endif; ?>
 
       <?php
@@ -64,15 +64,15 @@ $image_size = 'large';
     </div>
 
     <!-- CASE 2 -->
-    <div class="relative h-full p-6 md:p-2 bg-gray box-shadow">
-      <img class="rounded-[5px]" src="<?php echo wp_get_attachment_image_url($image_2_id, $image_size); ?>" />
+    <div class="relative p-6 md:p-2 bg-gray box-shadow">
+      <img class="rounded-[5px] w-full h-[220px] object-cover object-center" src="<?php echo wp_get_attachment_image_url($image_2_id, $image_size); ?>" />
 
       <?php if (!empty($title_2)) : ?>
         <p class="my-2 italic"><?php echo $title_2; ?></p>
       <?php endif; ?>
 
       <?php if (!empty($customer_2)) : ?>
-        <p class="mb-4 typo-subheading-small"><?php echo $customer_2; ?></p>
+        <p class="mb-6 typo-subheading-small"><?php echo $customer_2; ?></p>
       <?php endif; ?>
 
       <?php
@@ -86,15 +86,15 @@ $image_size = 'large';
     </div>
 
     <!-- CASE 3 -->
-    <div class="relative h-full p-6 md:p-2 bg-gray box-shadow">
-      <img class="rounded-[5px]" src="<?php echo wp_get_attachment_image_url($image_3_id, $image_size); ?>" />
+    <div class="relative p-6 md:p-2 bg-gray box-shadow">
+      <img class="rounded-[5px] w-full h-[220px] object-cover object-center" src="<?php echo wp_get_attachment_image_url($image_3_id, $image_size); ?>" />
 
       <?php if (!empty($title_3)) : ?>
         <p class="my-2 italic"><?php echo $title_3; ?></p>
       <?php endif; ?>
 
       <?php if (!empty($customer_3)) : ?>
-        <p class="mb-4 typo-subheading-small"><?php echo $customer_3; ?></p>
+        <p class="mb-6 typo-subheading-small"><?php echo $customer_3; ?></p>
       <?php endif; ?>
 
       <?php
