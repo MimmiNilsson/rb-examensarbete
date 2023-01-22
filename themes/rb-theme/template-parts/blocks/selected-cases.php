@@ -22,12 +22,9 @@ $link_3 = get_field('cta_3');
 $image_size = 'large';
 ?>
 
-
-<!-- NOT AN OPTIONS PAGE! NEEDS TO BE REG ACF? -->
-
 <!-- SELECTED CASES HEADING -->
 
-<div class="flex items-center mt-9 md:mt-24 ">
+<div class="flex items-center mt-9 md:mt-24">
   <?php if (!empty($heading)) : ?>
     <div aria-hidden="true" class="w-full h-[1px] bg-orange"></div>
 
