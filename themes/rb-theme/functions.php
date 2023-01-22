@@ -200,6 +200,20 @@ function acf_init_block_types()
 			)
 		));
 
+		// Companies Block
+		acf_register_block_type(array(
+			'name'              => 'companies',
+			'title'             => __('RB | Companies'),
+			'render_template'   => 'template-parts/blocks/companies.php',
+			'category'          => 'custom',
+			'icon'              => 'embed-post',
+			'keywords'          => array('companies', 'partners', 'logo'),
+			'mode' => 'edit',
+			'supports' => array(
+				'mode' => false
+			)
+		));
+
 		// Secondary (Woo) Hero Block
 		acf_register_block_type(array(
 			'name'              => 'secondary-hero',
