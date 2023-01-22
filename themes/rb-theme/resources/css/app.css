@@ -26,9 +26,9 @@ body {
 
 /* WooCommerce */
 
-main > .woocommerce {
+/* main > .woocommerce {
   @apply border-2 border-orange;
-}
+} */
 /* nav.woocommerce-breadcrumb {
   @apply !hidden;
 } */
@@ -54,7 +54,7 @@ ul > .pagenav {
 
 /* SINGLE PRODUCT PAGE */
 .woocommerce {
-  @apply w-[65%] typo-body py-9 m-auto;
+  @apply  m-auto typo-body py-9;
 }
 
 #main > .product.type-product {
