@@ -62,94 +62,94 @@ $image_size = 'large';
 
     <!-- COMPANY LOGOS -->
     <div class="flex flex-row flex-wrap self-center justify-center w-full p-6 m-auto md:p-2 lg:w-[90%] xl:w-[1220px]">
-      <div class="grid h-full grid-cols-2 gap-4 px-10 lg:px-0 sm:grid-cols-3 md:grid-cols-5"> <!-- mx-6 -->
+      <div class="grid h-full grid-cols-2 gap-12 px-10 lg:px-0 sm:grid-cols-3 md:grid-cols-5"> <!-- mx-6 -->
         <?php if (!empty($logo_1)) : ?>
-          <div class="self-center">
-            <img class="object-contain " src="<?php echo wp_get_attachment_image_url($logo_1_id, $image_size); ?>" />
+          <div class="flex items-center self-center justify-center w-full h-full border-2 border-green-600">
+            <img class="object-cover object-center h-[90px] w-[250px] " src="<?php echo wp_get_attachment_image_url($logo_1_id, $image_size); ?>" />
           </div>
         <?php endif; ?>
 
         <?php if (!empty($logo_2)) : ?>
-          <div class="self-center">
-            <img class="bject-contain " src="<?php echo wp_get_attachment_image_url($logo_2_id, $image_size); ?>" />
+          <div class="flex items-center self-center justify-center w-full h-full border-2 border-green-600">
+            <img class="object-cover object-center h-[90px] w-[250px] " src="<?php echo wp_get_attachment_image_url($logo_2_id, $image_size); ?>" />
           </div>
         <?php endif; ?>
 
         <?php if (!empty($logo_3)) : ?>
-          <div class="self-center">
-            <img class="object-contain " src="<?php echo wp_get_attachment_image_url($logo_3_id, $image_size); ?>" />
+          <div class="flex items-center self-center justify-center w-full h-full border-2 border-green-600">
+            <img class="object-cover object-center h-[90px] w-[250px] " src="<?php echo wp_get_attachment_image_url($logo_3_id, $image_size); ?>" />
           </div>
         <?php endif; ?>
 
         <?php if (!empty($logo_4)) : ?>
-          <div class="self-center">
-            <img class="object-contain " src="<?php echo wp_get_attachment_image_url($logo_4_id, $image_size); ?>" />
+          <div class="flex items-center self-center justify-center w-full h-full border-2 border-green-600">
+            <img class="object-cover object-center h-[90px] w-[250px] " src="<?php echo wp_get_attachment_image_url($logo_4_id, $image_size); ?>" />
           </div>
         <?php endif; ?>
 
         <?php if (!empty($logo_5)) : ?>
-          <div class="self-center">
-            <img class="object-contain " src="<?php echo wp_get_attachment_image_url($logo_5_id, $image_size); ?>" />
+          <div class="flex items-center self-center justify-center w-full h-full border-2 border-green-600">
+            <img class="object-cover object-center h-[90px] w-[250px] " src="<?php echo wp_get_attachment_image_url($logo_5_id, $image_size); ?>" />
           </div>
         <?php endif; ?>
 
         <?php if (!empty($logo_6)) : ?>
-          <div class="self-center">
-            <img class="object-contain " src="<?php echo wp_get_attachment_image_url($logo_6_id, $image_size); ?>" />
+          <div class="flex items-center self-center justify-center w-full h-full border-2 border-green-600">
+            <img class="object-cover object-center h-[90px] w-[250px] " src="<?php echo wp_get_attachment_image_url($logo_6_id, $image_size); ?>" />
           </div>
         <?php endif; ?>
 
         <?php if (!empty($logo_7)) : ?>
-          <div class="self-center">
-            <img class="object-contain " src="<?php echo wp_get_attachment_image_url($logo_7_id, $image_size); ?>" />
+          <div class="flex items-center self-center justify-center w-full h-full border-2 border-green-600">
+            <img class="object-cover object-center h-[90px] w-[250px] " src="<?php echo wp_get_attachment_image_url($logo_7_id, $image_size); ?>" />
           </div>
         <?php endif; ?>
 
         <?php if (!empty($logo_8)) : ?>
-          <div class="self-center">
-            <img class="object-contain " src="<?php echo wp_get_attachment_image_url($logo_8_id, $image_size); ?>" />
+          <div class="flex items-center self-center justify-center w-full h-full border-2 border-green-600">
+            <img class="object-cover object-center h-[90px] w-[250px] " src="<?php echo wp_get_attachment_image_url($logo_8_id, $image_size); ?>" />
           </div>
         <?php endif; ?>
 
         <?php if (!empty($logo_9)) : ?>
-          <div class="self-center">
-            <img class="object-contain " src="<?php echo wp_get_attachment_image_url($logo_9_id, $image_size); ?>" />
+          <div class="flex items-center self-center justify-center w-full h-full border-2 border-green-600">
+            <img class="object-cover object-center h-[90px] w-[250px] " src="<?php echo wp_get_attachment_image_url($logo_9_id, $image_size); ?>" />
           </div>
         <?php endif; ?>
 
         <?php if (!empty($logo_10)) : ?>
-          <div class="self-center">
-            <img class="object-contain " src="<?php echo wp_get_attachment_image_url($logo_10_id, $image_size); ?>" />
+          <div class="flex items-center self-center justify-center w-full h-full border-2 border-green-600">
+            <img class="object-cover object-center h-[90px] w-[250px] " src="<?php echo wp_get_attachment_image_url($logo_10_id, $image_size); ?>" />
           </div>
         <?php endif; ?>
 
         <?php if (!empty($logo_11)) : ?>
-          <div class="self-center">
-            <img class="object-contain " src="<?php echo wp_get_attachment_image_url($logo_11_id, $image_size); ?>" />
+          <div class="flex items-center self-center justify-center w-full h-full border-2 border-green-600">
+            <img class="object-cover object-center h-[90px] w-[250px] " src="<?php echo wp_get_attachment_image_url($logo_11_id, $image_size); ?>" />
           </div>
         <?php endif; ?>
 
         <?php if (!empty($logo_12)) : ?>
-          <div class="self-center">
-            <img class="object-contain " src="<?php echo wp_get_attachment_image_url($logo_12_id, $image_size); ?>" />
+          <div class="flex items-center self-center justify-center w-full h-full border-2 border-green-600">
+            <img class="object-cover object-center h-[90px] w-[250px] " src="<?php echo wp_get_attachment_image_url($logo_12_id, $image_size); ?>" />
           </div>
         <?php endif; ?>
 
         <?php if (!empty($logo_13)) : ?>
-          <div class="self-center">
-            <img class="object-contain " src="<?php echo wp_get_attachment_image_url($logo_13_id, $image_size); ?>" />
+          <div class="flex items-center self-center justify-center w-full h-full border-2 border-green-600">
+            <img class="object-cover object-center h-[90px] w-[250px]" src="<?php echo wp_get_attachment_image_url($logo_13_id, $image_size); ?>" />
           </div>
         <?php endif; ?>
 
         <?php if (!empty($logo_14)) : ?>
-          <div class="self-center">
-            <img class="object-contain " src="<?php echo wp_get_attachment_image_url($logo_14_id, $image_size); ?>" />
+          <div class="flex items-center self-center justify-center w-full h-full border-2 border-green-600">
+            <img class="object-cover object-center h-[90px] w-[250px]" src="<?php echo wp_get_attachment_image_url($logo_14_id, $image_size); ?>" />
           </div>
         <?php endif; ?>
 
         <?php if (!empty($logo_15)) : ?>
-          <div class="self-center">
-            <img class="object-contain " src="<?php echo wp_get_attachment_image_url($logo_15_id, $image_size); ?>" />
+          <div class="flex items-center self-center justify-center w-full h-full border-2 border-green-600">
+            <img class="object-cover object-center h-[90px] w-[250px] " src="<?php echo wp_get_attachment_image_url($logo_15_id, $image_size); ?>" />
           </div>
         <?php endif; ?>
       </div>
