@@ -301,8 +301,29 @@ add_filter('document_title_parts', function ($title) {
 });
 
 // WOOCOMMERCE RELATED
+// (Shop and single product pages)
 
-// Remove "Select options" button from (variable) products on the main WooCommerce shop page.
+// Remove breadcrumb from shop
+// remove_action('woocommerce_before_main_content', 'woocommerce_breadcrumb', 20, 0);
+// add_action( 'woocommerce_before_main_content', 'woocommerce_breadcrumb', 9, 0 );
+
+
+
+// Adding in ACF block
+add_action('woocommerce_before_shop_loop', 'add_text', 20);
+function add_text(){ 
+     get_template_part( 'template-parts/blocks/text' );  
+};
+
+// add_action('woocommerce_before_single_product_summary', 'add_text', 20);
+// function add_text(){ 
+//      get_template_part( 'template-parts/blocks/text' );  
+// };
+
+
+
+
+// Remove "Select options" button from (variable) products on the main WooCommerce shop page
 add_filter('woocommerce_loop_add_to_cart_link', function ($product) {
 	global $product;
 	if (is_shop() && 'variable' === $product->product_type) {
@@ -323,6 +344,23 @@ add_filter('woocommerce_loop_add_to_cart_link', function ($product) {
 // function add_breadcrumb(){
 //    woocommerce_breadcrumb();
 // };
+
+function woocommerce_button_proceed_to_checkout()
+{ ?>
+	<a href="<?php echo esc_url(wc_get_checkout_url()); ?>" class="checkout-button button alt wc-forward">
+		<?php esc_html_e('CHECKOUT', 'woocommerce'); ?>
+	</a>
+<?php
+}
+
+// Remove sidebar from single product page
+add_action('wp', 'woo_remove_sidebar_product_pages');
+function woo_remove_sidebar_product_pages()
+{
+	if (is_product()) {
+		remove_action('woocommerce_sidebar', 'woocommerce_get_sidebar', 10);
+	}
+}
 
 @ini_set('upload_max_size', '64M');
 @ini_set('post_max_size', '64M');
