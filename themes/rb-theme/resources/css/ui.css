@@ -12,7 +12,7 @@
   }
   
   .link::after {
-    @apply content-[""] absolute bg-blue w-1/2 h-[2px] bottom-[-10px] left-0 transition-all duration-200 ;
+    @apply content-[""] absolute bg-blue w-1/2 h-[2px] bottom-[-5px] left-0 transition-all duration-200;
   }
 
   .link:hover::after {
