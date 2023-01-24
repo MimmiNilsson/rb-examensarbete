@@ -50,7 +50,7 @@ do_action('woocommerce_before_main_content');
 
 <?php
 if (woocommerce_product_loop()) { ?>
-  <div class="bg-gray mb-9 md:mb-24">
+  <div class="my-9 md:my-24">
     <?php
 
     /**

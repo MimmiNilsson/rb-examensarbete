@@ -300,58 +300,48 @@ add_filter('document_title_parts', function ($title) {
 	return $title;
 });
 
-// WOOCOMMERCE RELATED
-// (Shop and single product pages)
+// ========== WOOCOMMERCE RELATED ==========
+
+// ---------- Shop and single product pages ----------
+// Remove "Select options" button from (variable) products
+// add_filter('woocommerce_loop_add_to_cart_link', function ($product) {
+// 	global $product;
+// 	if (is_shop() && 'variable' === $product->product_type) {
+// 		return '';
+// 	} else {
+// 		sprintf(
+// 			'<a href="%s" data-quantity="%s" class="%s" %s>%s</a>',
+// 			esc_url($product->add_to_cart_url()),
+// 			esc_attr(isset($args['quantity']) ? $args['quantity'] : 1),
+// 			esc_attr(isset($args['class']) ? $args['class'] : 'button'),
+// 			isset($args['attributes']) ? wc_implode_html_attributes($args['attributes']) : '',
+// 			esc_html($product->add_to_cart_text())
+// 		);
+// 	}
+// });
 
 // Remove breadcrumb from shop
 remove_action('woocommerce_before_main_content', 'woocommerce_breadcrumb', 20, 0);
 // add_action( 'woocommerce_before_main_content', 'woocommerce_breadcrumb', 9, 0 );
 
-
-
+// ========== SHOP PAGE - ADDING SPACE FOR ACF BUT NOT CONTENT... COMMENT IN IF LOOKED OVER ARCHIVE-PRODUCT.PHP ==========
+// --------------------
 // Adding in ACF block
-add_action('woocommerce_before_shop_loop', 'add_text', 20);
-function add_text(){ 
-     get_template_part( 'template-parts/blocks/text-wysiwyg' );  
-};
-
+// add_action('woocommerce_before_shop_loop', 'add_text', 20);
+// function add_text()
+// {
+// 	get_template_part('template-parts/blocks/text-wysiwyg');
+// };
+// --------------------
 // add_action('woocommerce_before_single_product_summary', 'add_text', 20);
 // function add_text(){ 
-//      get_template_part( 'template-parts/blocks/text' );  
+//      get_template_part( 'template-parts/blocks/text-wysiwyg' );  
 // };
+// --------------------
 
 
 
 
-// Remove "Select options" button from (variable) products on the main WooCommerce shop page
-add_filter('woocommerce_loop_add_to_cart_link', function ($product) {
-	global $product;
-	if (is_shop() && 'variable' === $product->product_type) {
-		return '';
-	} else {
-		sprintf(
-			'<a href="%s" data-quantity="%s" class="%s" %s>%s</a>',
-			esc_url($product->add_to_cart_url()),
-			esc_attr(isset($args['quantity']) ? $args['quantity'] : 1),
-			esc_attr(isset($args['class']) ? $args['class'] : 'button'),
-			isset($args['attributes']) ? wc_implode_html_attributes($args['attributes']) : '',
-			esc_html($product->add_to_cart_text())
-		);
-	}
-});
-
-// add_action('woocommerce_before_single_product', 'add_breadcrumb', 20);
-// function add_breadcrumb(){
-//    woocommerce_breadcrumb();
-// };
-
-function woocommerce_button_proceed_to_checkout()
-{ ?>
-	<a href="<?php echo esc_url(wc_get_checkout_url()); ?>" class="checkout-button button alt wc-forward">
-		<?php esc_html_e('CHECKOUT', 'woocommerce'); ?>
-	</a>
-<?php
-}
 
 // Remove sidebar from single product page
 add_action('wp', 'woo_remove_sidebar_product_pages');
@@ -361,6 +351,63 @@ function woo_remove_sidebar_product_pages()
 		remove_action('woocommerce_sidebar', 'woocommerce_get_sidebar', 10);
 	}
 }
+
+// ---------- CART PAGE ----------
+// 1. Show plus/minus buttons
+add_action('woocommerce_after_quantity_input_field', 'bbloomer_display_quantity_plus');
+function bbloomer_display_quantity_plus()
+{
+	echo '<button type="button" class="plus">+</button>';
+}
+
+add_action('woocommerce_before_quantity_input_field', 'bbloomer_display_quantity_minus');
+function bbloomer_display_quantity_minus()
+{
+	echo '<button type="button" class="minus">-</button>';
+}
+
+// 2. Trigger update quantity script
+add_action('wp_footer', 'add_cart_quantity_plus_minus');
+
+function add_cart_quantity_plus_minus()
+{
+	if (!is_product() && !is_cart()) return;
+	wc_enqueue_js("   
+           
+      $(document).on( 'click', 'button.plus, button.minus', function() {
+  
+         var qty = $( this ).parent( '.quantity' ).find( '.qty' );
+         var val = parseFloat(qty.val());
+         var max = parseFloat(qty.attr( 'max' ));
+         var min = parseFloat(qty.attr( 'min' ));
+         var step = parseFloat(qty.attr( 'step' ));
+ 
+         if ( $( this ).is( '.plus' ) ) {
+            if ( max && ( max <= val ) ) {
+               qty.val( max ).change();
+            } else {
+               qty.val( val + step ).change();
+            }
+         } else {
+            if ( min && ( min >= val ) ) {
+               qty.val( min ).change();
+            } else if ( val > 1 ) {
+               qty.val( val - step ).change();
+            }
+         }
+      });    
+   ");
+}
+
+// Change checkout button text
+function woocommerce_button_proceed_to_checkout()
+{ ?>
+	<a href="<?php echo esc_url(wc_get_checkout_url()); ?>" class="checkout-button button alt wc-forward">
+		<?php esc_html_e('CHECKOUT', 'woocommerce'); ?>
+	</a>
+<?php
+}
+
 
 @ini_set('upload_max_size', '64M');
 @ini_set('post_max_size', '64M');
