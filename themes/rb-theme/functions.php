@@ -304,7 +304,7 @@ add_filter('document_title_parts', function ($title) {
 // (Shop and single product pages)
 
 // Remove breadcrumb from shop
-// remove_action('woocommerce_before_main_content', 'woocommerce_breadcrumb', 20, 0);
+remove_action('woocommerce_before_main_content', 'woocommerce_breadcrumb', 20, 0);
 // add_action( 'woocommerce_before_main_content', 'woocommerce_breadcrumb', 9, 0 );
 
 
@@ -312,7 +312,7 @@ add_filter('document_title_parts', function ($title) {
 // Adding in ACF block
 add_action('woocommerce_before_shop_loop', 'add_text', 20);
 function add_text(){ 
-     get_template_part( 'template-parts/blocks/text' );  
+     get_template_part( 'template-parts/blocks/text-wysiwyg' );  
 };
 
 // add_action('woocommerce_before_single_product_summary', 'add_text', 20);
