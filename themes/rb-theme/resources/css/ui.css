@@ -31,8 +31,12 @@
     box-shadow:rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
   }
 
-  .woo-btn {
+  .woo-cta {
     @apply text-white duration-200 ease-in bg-black typo-cta hover:bg-orange hover:text-black;
+  }
+
+  .woo-secondary {
+    @apply text-black duration-200 ease-in bg-gray typo-subheading-small hover:bg-black hover:text-white;
   }
 
 }

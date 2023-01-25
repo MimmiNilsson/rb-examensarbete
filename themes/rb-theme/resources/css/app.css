@@ -48,7 +48,7 @@ h2.woocommerce-loop-product__title {
 } 
 /* prod card btns */
 .woocommerce ul.products li.product a.button {
-  @apply text-white bg-black hover:bg-orange hover:text-white sm:woo-btn;
+  @apply text-white bg-black hover:bg-orange hover:text-white sm:woo-cta;
 }
 /* prod added to cart pop-up msg */
 .woocommerce-notices-wrapper .woocommerce-message {
@@ -111,20 +111,23 @@ p.price {
 /* ---------- dashboard ---------- */
 /* nav container */
 .woocommerce .woocommerce-MyAccount-navigation {
-  @apply w-full bg-orange my-9 md:my-24 ;
+  @apply w-full py-3 md:py-6 bg-gray my-9 md:my-24;
 }
 .woocommerce .woocommerce-MyAccount-navigation > ul {
-  @apply flex flex-row content-center border-2 border-black justify-evenly lg:w-[90%] xl:w-[1220px] m-auto;
+  @apply flex flex-col md:flex-row text-center justify-between lg:w-[90%] xl:w-[1220px] m-auto px-6 lg:px-0 h-[12vh] md:h-auto;
 }
 .woocommerce .woocommerce-MyAccount-navigation .woocommerce-MyAccount-navigation-link a {
-  @apply typo-subheading ;
+  @apply px-3 py-2 typo-link;
+}
+.woocommerce .woocommerce-MyAccount-navigation .woocommerce-MyAccount-navigation-link a:hover {
+  @apply border-[1px] border-black ;
 }
 /* content container */
 .woocommerce .woocommerce-MyAccount-content {
-  @apply w-full px-6 py-12 m-auto text-center lg:px-0 bg-gray -my-9 md:-my-24 h-[50vh];
+  @apply w-full h-full px-6 py-12 m-auto text-center lg:px-0 box-shadow-container -my-9 md:-my-24;
 }
 .woocommerce-MyAccount-content > p {
-  @apply typo-subheading lg:w-[90%] xl:w-[1220px] m-auto self-center;
+  @apply  py-2 m-auto normal-case md:py-4 typo-h6 md:max-w-3xl;
 }
 .woocommerce-MyAccount-content > p > strong {
   @apply text-orange;
@@ -132,10 +135,55 @@ p.price {
 .woocommerce-MyAccount-content > p > a {
   @apply border-b border-blue;
 }
-
 /* ---------- orders ---------- */
-
-
+.woocommerce-MyAccount-content table.woocommerce-orders-table {
+  @apply px-6 m-auto md:max-w-3xl lg:px-0;
+}
+.woocommerce-orders-table th.woocommerce-orders-table__header {
+  @apply uppercase typo-subheading;
+}
+.woocommerce-orders-table td.woocommerce-orders-table__cell {
+  @apply typo-body;
+}
+.woocommerce-orders-table__cell a.woocommerce-button {
+  @apply woo-secondary;
+}
+/* ---------- view orders ---------- */
+/* order details */
+.woocommerce-MyAccount-content  p > mark.order-number, mark.order-date, mark.order-status {
+  @apply text-orange bg-inherit;
+}
+.woocommerce-MyAccount-content .woocommerce-order-details {
+  @apply px-6 py-4 m-auto md:max-w-3xl lg:px-0;
+}
+.woocommerce-order-details .woocommerce-order-details__title {
+  @apply mb-2 uppercase typo-subheading;
+}
+.woocommerce-table > thead, .woocommerce-column > h2 {
+  @apply uppercase typo-subheading;
+}
+.woocommerce-columns > h2 {
+  @apply pb-1;
+}
+.woocommerce-column--2 > h2 {
+  @apply mt-6 md:mt-0;
+}
+td.woocommerce-table__product-name, td.woocommerce-table__product-total {
+  @apply typo-h6;
+}
+.woocommerce-table > tfoot {
+  @apply typo-subheading-small;
+}
+/* billing and shipping address */
+.woocommerce-customer-details {
+  @apply py-9 md:py-24 lg:w-[90%] xl:w-[1220px] m-auto px-6 lg:px-0;
+}
+.woocommerce-columns {
+  @apply normal-case typo-subheading-medium;
+}
+.woocommerce-columns .woocommerce-column > address {
+  @apply text-center;
+}
 
 /* ============================== CART ==============================*/
 /* ---------- what's in cart info ---------- */
@@ -160,7 +208,7 @@ p.price {
 
 /* qty btns */
 .woocommerce td.product-quantity button.minus, button.plus {
-  @apply typo-h4 hover:bg-orange hover:rounded-full w-[42px] h-[42px] hover:text-white;
+  @apply typo-h4 hover:bg-black hover:rounded-full w-[42px] h-[42px] hover:text-white;
 }
 /* below cart items container */
 .woocommerce td.actions {
@@ -172,7 +220,7 @@ p.price {
 }
 /* coupon btn */
 .woocommerce td.actions .coupon button.button {
-  @apply relative left-0 text-black bg-gray typo-subheading-small hover:bg-black hover:text-white top-1;
+  @apply relative left-0 typo-subheading-small woo-secondary top-1;
 }
 /* ---------- shipping info/details ---------- */
 .woocommerce .cart-collaterals {
@@ -195,7 +243,7 @@ p.price {
 }
 /* checkout btn */
 .woocommerce a.button.alt, .woocommerce button.button.alt, .woocommerce input.button.alt {
-  @apply w-1/2 m-auto text-black duration-200 ease-in bg-orange hover:text-white hover:bg-black typo-cta;
+  @apply w-1/2 m-auto woo-cta typo-cta;
 }
 
 

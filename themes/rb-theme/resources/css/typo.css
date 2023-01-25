@@ -105,6 +105,14 @@ body {
     line-height: 1.4em; /*35px*/
   }
 
+  .typo-subheading-medium {
+    @apply uppercase;
+    font-family: 'Poppins';
+    font-weight: 500;
+    font-size: 0.875em; /*14px*/
+    line-height: 1.34em; /*16px*/
+  }
+
   /*selected (cases)*/
   .typo-subheading-small {
     @apply uppercase;
