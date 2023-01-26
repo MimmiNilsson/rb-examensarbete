@@ -10,6 +10,7 @@ Given what RB has in mind for their website, I decided to use WordPress and WooC
 My stack includes PHP, JavaScript as well as Tailwind CSS.
 
 =============================================
+
 Limitations and platforms:
 - Google Chrome version: 108
 - PHP version: 7.4.21
