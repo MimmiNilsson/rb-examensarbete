@@ -55,101 +55,101 @@ $image_size = 'large';
 <!-- BACKGROUND IMAGE -->
 <?php if (!empty($background_image)) : ?>
   <div class="m-auto w-full min-h-[50vh] relative my-9 md:my-24 flex justify-center"> <!-- lg:w-[90%] xl:w-[1220px] -->
-    <div class="absolute inset-0 z-0 w-full h-full bg-center bg-no-repeat bg-cover opacity-70 md:block" style="background-image: url('<?php echo wp_get_attachment_image_url($background_image_id, $image_size); ?>');"></div>
+    <div class="absolute inset-0 z-0 w-full h-full bg-center bg-no-repeat bg-cover md:block" style="background-image: url('<?php echo wp_get_attachment_image_url($background_image_id, $image_size); ?>');"></div>
   <?php else : ?>
-    <div class="m-auto w-full min-h-[50vh] relative my-9 md:my-24 flex justify-center bg-black opacity-60"> <!-- lg:w-[90%] xl:w-[1220px] -->
+    <div class="m-auto w-full min-h-[50vh] relative my-9 md:my-24 flex justify-center bg-gray"> <!-- lg:w-[90%] xl:w-[1220px] -->
     <?php endif; ?>
 
     <!-- COMPANY LOGOS -->
-    <div class="flex flex-row flex-wrap self-center justify-center w-full p-6 m-auto md:p-2 lg:w-[90%] xl:w-[1220px]">
-      <div class="grid h-full grid-cols-2 gap-12 px-10 lg:px-0 sm:grid-cols-3 md:grid-cols-5"> <!-- mx-6 -->
+    <div class="flex flex-row flex-wrap self-center justify-center w-full items-center lg:w-[90%] xl:w-[1220px]">
+      <div class="grid h-full grid-cols-2 gap-8 px-1 sm:px-6 sm:grid-cols-3 md:gap-10 lg:px-0 md:grid-cols-4 lg:grid-cols-5"> <!-- mx-6 -->
         <?php if (!empty($logo_1)) : ?>
-          <div class="flex items-center self-center justify-center w-full h-full border-2 border-green-600">
-            <img class="object-cover object-center h-[90px] w-[250px] " src="<?php echo wp_get_attachment_image_url($logo_1_id, $image_size); ?>" />
+          <div class="flex items-center self-center justify-center w-full h-full">
+            <img class="rounded-full object-fit object-center lg:h-[140px] lg:w-[145px] h-[125px] w-[130px] logo opacity-50" src="<?php echo wp_get_attachment_image_url($logo_1_id, $image_size); ?>" />
           </div>
         <?php endif; ?>
 
         <?php if (!empty($logo_2)) : ?>
-          <div class="flex items-center self-center justify-center w-full h-full border-2 border-green-600">
-            <img class="object-cover object-center h-[90px] w-[250px] " src="<?php echo wp_get_attachment_image_url($logo_2_id, $image_size); ?>" />
+          <div class="flex items-center self-center justify-center w-full h-full">
+            <img class="rounded-full object-fit object-center lg:h-[140px] lg:w-[145px] h-[125px] w-[130px] logo opacity-50" src="<?php echo wp_get_attachment_image_url($logo_2_id, $image_size); ?>" />
           </div>
         <?php endif; ?>
 
         <?php if (!empty($logo_3)) : ?>
-          <div class="flex items-center self-center justify-center w-full h-full border-2 border-green-600">
-            <img class="object-cover object-center h-[90px] w-[250px] " src="<?php echo wp_get_attachment_image_url($logo_3_id, $image_size); ?>" />
+          <div class="flex items-center self-center justify-center w-full h-full">
+            <img class="rounded-full object-fit object-center lg:h-[140px] lg:w-[145px] h-[125px] w-[130px] logo opacity-50" src="<?php echo wp_get_attachment_image_url($logo_3_id, $image_size); ?>" />
           </div>
         <?php endif; ?>
 
         <?php if (!empty($logo_4)) : ?>
-          <div class="flex items-center self-center justify-center w-full h-full border-2 border-green-600">
-            <img class="object-cover object-center h-[90px] w-[250px] " src="<?php echo wp_get_attachment_image_url($logo_4_id, $image_size); ?>" />
+          <div class="flex items-center self-center justify-center w-full h-full">
+            <img class="rounded-full object-fit object-center lg:h-[140px] lg:w-[145px] h-[125px] w-[130px] logo opacity-50" src="<?php echo wp_get_attachment_image_url($logo_4_id, $image_size); ?>" />
           </div>
         <?php endif; ?>
 
         <?php if (!empty($logo_5)) : ?>
-          <div class="flex items-center self-center justify-center w-full h-full border-2 border-green-600">
-            <img class="object-cover object-center h-[90px] w-[250px] " src="<?php echo wp_get_attachment_image_url($logo_5_id, $image_size); ?>" />
+          <div class="flex items-center self-center justify-center w-full h-full">
+            <img class="rounded-full object-fit object-center lg:h-[140px] lg:w-[145px] h-[125px] w-[130px] logo opacity-50" src="<?php echo wp_get_attachment_image_url($logo_5_id, $image_size); ?>" />
           </div>
         <?php endif; ?>
 
         <?php if (!empty($logo_6)) : ?>
-          <div class="flex items-center self-center justify-center w-full h-full border-2 border-green-600">
-            <img class="object-cover object-center h-[90px] w-[250px] " src="<?php echo wp_get_attachment_image_url($logo_6_id, $image_size); ?>" />
+          <div class="flex items-center self-center justify-center w-full h-full">
+            <img class="rounded-full object-fit object-center lg:h-[140px] lg:w-[145px] h-[125px] w-[130px] logo opacity-50" src="<?php echo wp_get_attachment_image_url($logo_6_id, $image_size); ?>" />
           </div>
         <?php endif; ?>
 
         <?php if (!empty($logo_7)) : ?>
-          <div class="flex items-center self-center justify-center w-full h-full border-2 border-green-600">
-            <img class="object-cover object-center h-[90px] w-[250px] " src="<?php echo wp_get_attachment_image_url($logo_7_id, $image_size); ?>" />
+          <div class="flex items-center self-center justify-center w-full h-full">
+            <img class="rounded-full object-fit object-center lg:h-[140px] lg:w-[145px] h-[125px] w-[130px] logo opacity-50" src="<?php echo wp_get_attachment_image_url($logo_7_id, $image_size); ?>" />
           </div>
         <?php endif; ?>
 
         <?php if (!empty($logo_8)) : ?>
-          <div class="flex items-center self-center justify-center w-full h-full border-2 border-green-600">
-            <img class="object-cover object-center h-[90px] w-[250px] " src="<?php echo wp_get_attachment_image_url($logo_8_id, $image_size); ?>" />
+          <div class="flex items-center self-center justify-center w-full h-full">
+            <img class="rounded-full object-fit object-center lg:h-[140px] lg:w-[145px] h-[125px] w-[130px] logo opacity-50" src="<?php echo wp_get_attachment_image_url($logo_8_id, $image_size); ?>" />
           </div>
         <?php endif; ?>
 
         <?php if (!empty($logo_9)) : ?>
-          <div class="flex items-center self-center justify-center w-full h-full border-2 border-green-600">
-            <img class="object-cover object-center h-[90px] w-[250px] " src="<?php echo wp_get_attachment_image_url($logo_9_id, $image_size); ?>" />
+          <div class="flex items-center self-center justify-center w-full h-full">
+            <img class="rounded-full object-fit object-center lg:h-[140px] lg:w-[145px] h-[125px] w-[130px] logo opacity-50" src="<?php echo wp_get_attachment_image_url($logo_9_id, $image_size); ?>" />
           </div>
         <?php endif; ?>
 
         <?php if (!empty($logo_10)) : ?>
-          <div class="flex items-center self-center justify-center w-full h-full border-2 border-green-600">
-            <img class="object-cover object-center h-[90px] w-[250px] " src="<?php echo wp_get_attachment_image_url($logo_10_id, $image_size); ?>" />
+          <div class="flex items-center self-center justify-center w-full h-full">
+            <img class="rounded-full object-fit object-center lg:h-[140px] lg:w-[145px] h-[125px] w-[130px] logo opacity-50" src="<?php echo wp_get_attachment_image_url($logo_10_id, $image_size); ?>" />
           </div>
         <?php endif; ?>
 
         <?php if (!empty($logo_11)) : ?>
-          <div class="flex items-center self-center justify-center w-full h-full border-2 border-green-600">
-            <img class="object-cover object-center h-[90px] w-[250px] " src="<?php echo wp_get_attachment_image_url($logo_11_id, $image_size); ?>" />
+          <div class="flex items-center self-center justify-center w-full h-full">
+            <img class="rounded-full object-fit object-center lg:h-[140px] lg:w-[145px] h-[125px] w-[130px] logo opacity-50" src="<?php echo wp_get_attachment_image_url($logo_11_id, $image_size); ?>" />
           </div>
         <?php endif; ?>
 
         <?php if (!empty($logo_12)) : ?>
-          <div class="flex items-center self-center justify-center w-full h-full border-2 border-green-600">
-            <img class="object-cover object-center h-[90px] w-[250px] " src="<?php echo wp_get_attachment_image_url($logo_12_id, $image_size); ?>" />
+          <div class="flex items-center self-center justify-center w-full h-full">
+            <img class="rounded-full object-fit object-center lg:h-[140px] lg:w-[145px] h-[125px] w-[130px] logo opacity-50" src="<?php echo wp_get_attachment_image_url($logo_12_id, $image_size); ?>" />
           </div>
         <?php endif; ?>
 
         <?php if (!empty($logo_13)) : ?>
-          <div class="flex items-center self-center justify-center w-full h-full border-2 border-green-600">
-            <img class="object-cover object-center h-[90px] w-[250px]" src="<?php echo wp_get_attachment_image_url($logo_13_id, $image_size); ?>" />
+          <div class="flex items-center self-center justify-center w-full h-full">
+            <img class="rounded-full object-fit object-center lg:h-[140px] lg:w-[145px] h-[125px] w-[130px] logo opacity-50" src="<?php echo wp_get_attachment_image_url($logo_13_id, $image_size); ?>" />
           </div>
         <?php endif; ?>
 
         <?php if (!empty($logo_14)) : ?>
-          <div class="flex items-center self-center justify-center w-full h-full border-2 border-green-600">
-            <img class="object-cover object-center h-[90px] w-[250px]" src="<?php echo wp_get_attachment_image_url($logo_14_id, $image_size); ?>" />
+          <div class="flex items-center self-center justify-center w-full h-full">
+            <img class="rounded-full object-fit object-center lg:h-[140px] lg:w-[145px] h-[125px] w-[130px] logo opacity-50" src="<?php echo wp_get_attachment_image_url($logo_14_id, $image_size); ?>" />
           </div>
         <?php endif; ?>
 
         <?php if (!empty($logo_15)) : ?>
-          <div class="flex items-center self-center justify-center w-full h-full border-2 border-green-600">
-            <img class="object-cover object-center h-[90px] w-[250px] " src="<?php echo wp_get_attachment_image_url($logo_15_id, $image_size); ?>" />
+          <div class="flex items-center self-center justify-center w-full h-full">
+            <img class="rounded-full object-fit object-center lg:h-[140px] lg:w-[145px] h-[125px] w-[130px]  logo opacity-50" src="<?php echo wp_get_attachment_image_url($logo_15_id, $image_size); ?>" />
           </div>
         <?php endif; ?>
       </div>
