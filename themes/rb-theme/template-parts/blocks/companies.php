@@ -51,7 +51,6 @@ $logo_15_id = $logo_15['ID'];
 $image_size = 'large';
 ?>
 
-
 <!-- BACKGROUND IMAGE -->
 <?php if (!empty($background_image)) : ?>
   <div class="m-auto w-full min-h-[50vh] relative my-9 md:my-24 flex justify-center"> <!-- lg:w-[90%] xl:w-[1220px] -->
@@ -62,7 +61,7 @@ $image_size = 'large';
 
     <!-- COMPANY LOGOS -->
     <div class="flex flex-row flex-wrap self-center justify-center w-full items-center lg:w-[90%] xl:w-[1220px]">
-      <div class="grid h-full grid-cols-2 gap-8 px-1 sm:px-6 sm:grid-cols-3 md:gap-10 lg:px-0 md:grid-cols-4 lg:grid-cols-5"> <!-- mx-6 -->
+      <div class="grid h-full grid-cols-2 gap-8 px-1 sm:px-6 sm:grid-cols-3 md:gap-10 lg:px-0 md:grid-cols-4 lg:grid-cols-5"> 
         <?php if (!empty($logo_1)) : ?>
           <div class="flex items-center self-center justify-center w-full h-full">
             <img class="rounded-full object-fit object-center lg:h-[140px] lg:w-[145px] h-[125px] w-[130px] logo opacity-50" src="<?php echo wp_get_attachment_image_url($logo_1_id, $image_size); ?>" />
