@@ -66,11 +66,11 @@ select.orderby {
 p.woocommerce-result-count {
   @apply hidden;
 }
-
 /* ============================== SINGLE PROD PAGE ==============================*/
+/* ---------- simple product ---------- */
 /* page container */
 .product {
-  @apply md:mt-[220px] my-9 m-auto lg:w-[90%] xl:w-[1220px] px-6 lg:px-0 pt-4; /* md:mt-[260px] 130px*/
+  @apply md:mt-[220px] my-9 m-auto lg:w-[90%] xl:w-[1220px] px-6 lg:px-0 pt-4; /* md:mt-[260px] 130px md:mt-[220px]   */
 }
 /* product image */
 .woocommerce-product-gallery {
@@ -79,49 +79,36 @@ p.woocommerce-result-count {
 .woocommerce-product-gallery__wrapper  {
   @apply border-2 border-gray;
 }
-
 /* prod info right */
 .summary {
-  @apply  w-full m-auto text-center;
+  @apply  w-full m-auto;
 }
 .summary h1 {
-  @apply mb-2 uppercase border-b-2 border-gray typo-h3;
+  @apply mb-2 text-center uppercase border-b-2 border-gray typo-h3;
 }
 p.price {
-  @apply my-2 border-2 border-green-500 typo-body;
+  @apply my-2 border-b-2 border-gray typo-body;
 }
 .woocommerce-product-details__short-description > p {
   @apply my-4 normal-case typo-h5;
 }
-
 /* qty and add btn */
-.summary form.cart {
-  @apply flex flex-col justify-center bg-blue;
+.summary form.cart, .summary form.variations_form .cart {
+  @apply flex flex-col justify-center;
 }
 .cart .quantity {
-  @apply bg-orange;
+  @apply py-2 text-center;
 }
-
-/* qty */
-                          /* .cart .quantity {
-                            @apply w-full py-6 text-center border-2 border-black;
-                          }
-                          .cart .quantity .input-text {
-                            @apply w-1/4 rounded-full h-1/4 bg-orange typo-subheading;
-                          }
-                          .quantity .minus, .quantity .plus {
-                            @apply w-[5%] h-[5%] typo-subheading rounded-full;
-                          }
-                          .quantity .minus:hover, .quantity .plus:hover {
-                            @apply rounded-full bg-gray;
-                          } */
+.quantity button.minus, .quantity button.plus {
+  @apply typo-h4 hover:bg-gray hover:rounded-full w-[42px] h-[42px];
+}
+.quantity .input-text {
+  @apply typo-h6;
+}
 /* add to cart btn */
-
-
-
-
-
-
+.cart button.single_add_to_cart_button {
+  @apply !w-full !mt-2;
+}
 /* desc and additional info container */
 .product .woocommerce-tabs {
   @apply px-6 m-auto bg-gray lg:px-0 my-9 md:my-24; /*md:max-w-3xl*/
@@ -165,21 +152,41 @@ p.price {
 }
 /* related container */
 .product section.related {
-  @apply p-10 border-t-2 box-shadow-container border-orange my-9 md:my-24; 
+  @apply border-t-2 box-shadow-container border-orange my-9 md:my-24; 
 }
 /* related heading */
 .product section.related.products > h2 {
-  @apply uppercase typo-subheading;
+  @apply my-4 uppercase typo-subheading;
 }
-
-
-
-
-
-
-
-
-
+/* ---------- variable prod ---------- */
+/* .variations_form {
+  @apply bg-purple;
+} */
+.variations_form .variations > tbody {
+  @apply typo-subheading-medium;
+}
+/* .single_variation_wrap {
+  @apply bg-orange;
+} */
+.woocommerce-variation-add-to-cart .quantity {
+  @apply w-full pb-4;
+}
+/* select options fields */
+.variations tbody > tr > td > select {
+  @apply border-2 border-gray;
+}
+/* add to cart btn */
+.summary .variations_form .single_variation_wrap button.woocommerce-variation-add-to-cart.disabled,
+.summary .variations_form .single_variation_wrap button.single_add_to_cart_button {
+  @apply w-full;
+}
+/* wanting to change color of disabled add to cart btn... */
+.summary .variations_form .single_variation_wrap button.woocommerce-variation-add-to-cart.disabled {
+  @apply !text-black !bg-orange;
+}
+.product_meta > span {
+  @apply typo-subheading-medium;
+}
 /* ============================== MY ACCOUNT ==============================*/
 /* ---------- dashboard ---------- */
 /* nav container */
@@ -254,6 +261,11 @@ td.woocommerce-table__product-name, td.woocommerce-table__product-total {
 .woocommerce-columns .woocommerce-column > address {
   @apply text-center;
 }
+/* order again btn */
+.woocommerce-order-details .order-again > a.button {
+  @apply woo-cta;
+}
+
 /* ---------- downloads ---------- */
 .woocommerce-MyAccount-content .woocommerce-Message--info {
   @apply -my-1;
@@ -265,7 +277,6 @@ td.woocommerce-table__product-name, td.woocommerce-table__product-total {
 .woocommerce-MyAccount-content .u-columns {
   @apply py-9 md:py-24 lg:w-[90%] xl:w-[1220px] m-auto px-6 lg:px-0;
 }
-
 .woocommerce-MyAccount-content .u-column1 {
   @apply box-shadow-container;
 }
@@ -370,7 +381,7 @@ td.woocommerce-table__product-name, td.woocommerce-table__product-total {
   @apply typo-cta;
 }
 /* qty btns */
-.woocommerce td.product-quantity button.minus, button.plus {
+.woocommerce td.product-quantity button.minus, .woocommerce td.product-quantity button.plus {
   @apply typo-h4 hover:bg-gray hover:rounded-full w-[42px] h-[42px];
 }
 /* coupon container */
@@ -548,8 +559,7 @@ form.checkout h3#order_review_heading {
 #payment .woocommerce-terms-and-conditions-wrapper {
   @apply m-auto mb-6 typo-subheading-medium md:max-w-3xl;
 }
-
-/* ----- thanks for your order page ----- */
+/* ----- post ordering page ----- */
 /* thank you msg */
 .woocommerce-order > p.woocommerce-notice {
   @apply px-6 m-auto typo-h3 md:max-w-3xl py-9 md:py-24 lg:px-0;
