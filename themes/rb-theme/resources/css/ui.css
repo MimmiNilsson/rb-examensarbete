@@ -38,5 +38,9 @@
   .woo-secondary {
     @apply text-black duration-200 ease-in bg-gray typo-subheading-small hover:bg-black hover:text-white;
   }
+  
+  .woo-coupon {
+    @apply lg:w-[90%] xl:w-[1220px] m-auto my-9 md:my-24 typo-cta border-t-[3px] border-orange;
+  }
 
 }

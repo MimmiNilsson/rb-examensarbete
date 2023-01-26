@@ -128,4 +128,11 @@ body {
     font-size: 1.125em; /*18px*/  /*19.20px*/
     line-height: 1.5em; /*27px*/
   }
+
+  .typo-body-small {
+    font-family: '"Libre Baskerville"';
+    font-weight: 400; 
+    font-size: 0.875em; /*14px*/ 
+    line-height: 1.5em; /*27px*/
+  }
 }

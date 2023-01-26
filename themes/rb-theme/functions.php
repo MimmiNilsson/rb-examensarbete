@@ -341,8 +341,6 @@ remove_action('woocommerce_before_main_content', 'woocommerce_breadcrumb', 20, 0
 
 
 
-
-
 // Remove sidebar from single product page
 add_action('wp', 'woo_remove_sidebar_product_pages');
 function woo_remove_sidebar_product_pages()
