@@ -14,16 +14,11 @@ $site_url = network_site_url('/');
 	<link rel="icon" type="image/png" href="<?php echo $root_uri; ?>/resources/images/rb-logo-clear.png" />
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<!-- <link href="https://fonts.googleapis.com/css2?family=Questrial&display=swap" rel="stylesheet"> -->
+
 	<?php wp_head(); ?>
 </head>
 
 <body <?php body_class(); ?>>
-
-
-
-
-
 
 	<?php do_action('amoba_site_before'); ?>
 
@@ -132,24 +127,29 @@ $site_url = network_site_url('/');
 									</div>
 								</div>
 
-								<!-- Hamburger Nav --->
-								<!-- <div class="md:hidden">
+								<!-- Hamburger (Footer) Nav --->
+								<!-- <div class="border-white flexborder-2 typo-subheading h-[200px]">
+									<div class="mb-9 md:mb-24">
+										<div class="mb-3">
+											<?php if (!empty($email)) : ?>
+												<a href="mailto:<?php echo $email; ?>"><?php echo $email; ?></a>
+											<?php endif; ?>
+										</div>
 
-							<div class="mt-20">
-							<div class="flex flex-row justify-between mt-12 lg:hidden typo-body text-[16px] md:text-[18px]">
-								<div class="w-[45%]">
-									<div class="flex">
-										<a href=""></a>
-										<?php if (!empty($telefonnummer)) : the_field('telefonnummer', 'option');
-										endif; ?>
+										<div class="mb-3">
+											<?php if (!empty($phone)) : ?>
+												<a href="tel:<?php echo $phone; ?>"><?php echo $phone; ?></a>
+											<?php endif; ?>
+										</div>
+
+										<div class="typo-subheading-small">
+											<?php if (!empty($address)) : ?>
+												<?php the_field('address', 'option'); ?>
+											<?php endif; ?>
+										</div>
 									</div>
-									<?php if (!empty($email)) : the_field('email', 'option');
-									endif; ?>
-								</div>
-								</div>
-							</div>
+								</div> -->
 
-						</div> -->
 							</div>
 					</div>
 			</nav>
