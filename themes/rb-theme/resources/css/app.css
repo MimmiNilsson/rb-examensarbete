@@ -212,6 +212,9 @@ p.price {
 .woocommerce-MyAccount-content > p > strong {
   @apply text-orange;
 }
+.woocommerce-MyAccount-content > p > a {
+  @apply underline;
+}
 /* ---------- orders ---------- */
 .woocommerce-MyAccount-content table.woocommerce-orders-table {
   @apply px-6 m-auto md:max-w-3xl lg:px-0;
@@ -265,7 +268,6 @@ td.woocommerce-table__product-name, td.woocommerce-table__product-total {
 .woocommerce-order-details .order-again > a.button {
   @apply woo-cta;
 }
-
 /* ---------- downloads ---------- */
 .woocommerce-MyAccount-content .woocommerce-Message--info {
   @apply -my-1;
@@ -314,8 +316,11 @@ td.woocommerce-table__product-name, td.woocommerce-table__product-total {
   @apply -my-1 mb-9 md:mb-24;
 }
 /* ----- payment methods ----- */
+.woocommerce-MyAccount-content > p.woocommerce-Message {
+  @apply typo-cta;
+}
 .woocommerce-MyAccount-content > a.button {
-  @apply mt-9 md:mt-24 woo-cta;
+  @apply mt-9 woo-cta;
 }
 /* -----account details ----- */
 .woocommerce-MyAccount-content .woocommerce-EditAccountForm {
@@ -400,10 +405,6 @@ td.woocommerce-table__product-name, td.woocommerce-table__product-total {
   @apply border-2 border-[#FF0000];
 }
 /* ---------- shipping info/details ---------- */
-/* select btn */
-/* .woocommerce .cart-collaterals  td ul li {
-  @apply border-2 border-black;
-} */
 .woocommerce .cart-collaterals {
   @apply lg:w-[90%] xl:w-[1220px] m-auto pt-9 md:pt-24 px-6 lg:px-0;
 }
