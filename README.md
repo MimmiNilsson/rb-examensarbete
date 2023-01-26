@@ -9,26 +9,21 @@ This build also acts as a small webshop to include some merch that they recently
 Given what RB has in mind for their website, I decided to use WordPress and WooCommerce.
 My stack includes PHP, JavaScript as well as Tailwind CSS.
 
-========================================================================================================
-
+=============================================
 Limitations and platforms:
-
 - Google Chrome version: 108
 - PHP version: 7.4.21
 
 Web server requirements:
-
 - phpMyAdmin: 7.4.21
 - Mamp: 6.6
-- # MySQL: 5.7.34
+- MySQL: 5.7.34
 
-Valda punkter:
-
+# Valda punkter
 - Koppling till en betallösning.
 - Tjänsten/produkten innehåller användarhantering.
 - Olika användarnivåer måste finnas som påverkar tillgång till funktioner. Någon form av innehåll ska vara kopplat till respektive användare (ordrar,uppladdningar etc).
 
 Loggning av process:
-
 - Trello: https://trello.com/b/tsMpFOkO/examensarbete
 - Toggl: https://track.toggl.com/timer
