@@ -255,7 +255,6 @@ if (function_exists('acf_add_options_page')) {
 	));
 }
 
-
 // Make sure Polylang copies the content when creating a translation
 function jb_editor_content($content)
 {
@@ -301,7 +300,6 @@ add_filter('document_title_parts', function ($title) {
 });
 
 // ========== WOOCOMMERCE RELATED ==========
-
 // ---------- Shop and single product pages ----------
 // Remove "Select options" button from (variable) products
 // add_filter('woocommerce_loop_add_to_cart_link', function ($product) {
@@ -338,8 +336,6 @@ remove_action('woocommerce_before_main_content', 'woocommerce_breadcrumb', 20, 0
 //      get_template_part( 'template-parts/blocks/text-wysiwyg' );  
 // };
 // --------------------
-
-
 
 // Remove sidebar from single product page
 add_action('wp', 'woo_remove_sidebar_product_pages');
@@ -405,7 +401,6 @@ function woocommerce_button_proceed_to_checkout()
 	</a>
 <?php
 }
-
 
 @ini_set('upload_max_size', '64M');
 @ini_set('post_max_size', '64M');

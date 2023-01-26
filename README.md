@@ -28,3 +28,4 @@ Web server requirements:
 Loggning av process:
 - Trello: https://trello.com/b/tsMpFOkO/examensarbete
 - Toggl: https://track.toggl.com/timer
+- Figma: https://www.figma.com/file/jF6WZ1KYgCgB0MpHZLTozC/Rulla-Bandet?node-id=0%3A1&t=vz6vUyu4GSB56zN9-0 
