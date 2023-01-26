@@ -11,10 +11,6 @@
   @apply my-2.5 text-left md:my-0 md:text-center typo-h4 md:typo-link;
 }
 
-.header-menu > ul.menu > li:hover {
-  @apply md:border-b-2 md:border-blue;
-}
-
 .header-menu-left {
   @apply my-2 md:my-0;
 }
